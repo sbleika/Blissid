@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.seventeen.blissappid" >
 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
