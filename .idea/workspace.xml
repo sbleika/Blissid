@@ -23,13 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80543271-b90f-4b54-8eff-c9bfdca30807" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/androidTest/androidTest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blissid.iws" />
@@ -55,19 +48,20 @@
     <leaf>
       <file leaf-file-name="activity_main_activity.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43399638" vertical-offset="270" max-vertical-offset="855">
-              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="1035">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <element signature="e#579#607#0" expanded="true" />
-                <element signature="e#750#778#0" expanded="true" />
-                <element signature="e#921#949#0" expanded="true" />
-                <element signature="e#1204#1232#0" expanded="true" />
-                <element signature="e#1375#1403#0" expanded="true" />
+                <element signature="e#621#649#0" expanded="true" />
+                <element signature="e#792#820#0" expanded="true" />
+                <element signature="e#963#991#0" expanded="true" />
+                <element signature="e#1372#1400#0" expanded="true" />
+                <element signature="e#1543#1571#0" expanded="true" />
+                <element signature="e#1714#1742#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -259,7 +253,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="234" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="30" />
   </component>
   <component name="RunManager" selected="Android Application.main">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -435,7 +429,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32933652" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933652" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,11 +479,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#579#607#0" expanded="true" />
-            <element signature="e#750#778#0" expanded="true" />
-            <element signature="e#921#949#0" expanded="true" />
-            <element signature="e#1204#1232#0" expanded="true" />
-            <element signature="e#1375#1403#0" expanded="true" />
+            <element signature="e#621#649#0" expanded="true" />
+            <element signature="e#792#820#0" expanded="true" />
+            <element signature="e#963#991#0" expanded="true" />
+            <element signature="e#1372#1400#0" expanded="true" />
+            <element signature="e#1543#1571#0" expanded="true" />
+            <element signature="e#1714#1742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -522,19 +517,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43399638" vertical-offset="270" max-vertical-offset="855">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="1035">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#579#607#0" expanded="true" />
-            <element signature="e#750#778#0" expanded="true" />
-            <element signature="e#921#949#0" expanded="true" />
-            <element signature="e#1204#1232#0" expanded="true" />
-            <element signature="e#1375#1403#0" expanded="true" />
+            <element signature="e#621#649#0" expanded="true" />
+            <element signature="e#792#820#0" expanded="true" />
+            <element signature="e#963#991#0" expanded="true" />
+            <element signature="e#1372#1400#0" expanded="true" />
+            <element signature="e#1543#1571#0" expanded="true" />
+            <element signature="e#1714#1742#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
