@@ -1,9 +1,12 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class main_activity extends Activity {
@@ -14,6 +17,11 @@ public class main_activity extends Activity {
         setContentView(R.layout.activity_main_activity);
     }
 
+    public void launchBrowser(View view) {
+        Uri uriUrl = Uri.parse("http://haefing.is/blisstafla/is/");
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

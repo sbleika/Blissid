@@ -40,23 +40,19 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <ImageButton
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable-hdpi/ja.png"
-        />
-
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:onClick="launchBrowser"
+            android:text="@string/button_browser" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/button_placeholder"
             android:layout_centerInParent="true"/>
-
-
-
 
         <Button
             android:id="@+id/button6"

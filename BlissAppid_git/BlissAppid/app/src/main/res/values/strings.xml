@@ -4,6 +4,11 @@
     <string name="app_name">BlissAppid</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="button_placeholder">Ég er styttri strengur</string>
+=======
+    <string name="button_placeholder">Ég stór</string>
+    <string name="button_browser">link</string>
+>>>>>>> 039ec778a02f7fbed59687c3048a3211e6c75da0
 
 </resources>
