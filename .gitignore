@@ -19,6 +19,7 @@ gen/
 
 #
 .idea/
+.idea/**
 
 # Gradle files
 .gradle/
