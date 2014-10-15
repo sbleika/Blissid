@@ -44,23 +44,24 @@
         android:layout_gravity="bottom">
 
         <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="launchBrowser"
+            android:text="@string/button_browser" />
+
+        <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/button_placeholder" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:onClick="launchBrowser"
-            android:text="@string/button_placeholder" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/button_browser" />
+            android:text="@string/button_placeholder" />
 
 
 
