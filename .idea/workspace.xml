@@ -23,11 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80543271-b90f-4b54-8eff-c9bfdca30807" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/java/com/example/seventeen/blissappid/main_activity.java" afterPath="$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/java/com/example/seventeen/blissappid/main_activity.java" />
     </list>
     <ignored path="Blissid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,14 +50,14 @@
       <file leaf-file-name="activity_main_activity.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26127818" vertical-offset="461" max-vertical-offset="1200">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.26127818" vertical-offset="596" max-vertical-offset="1350">
+              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
               <folding>
                 <element signature="e#655#683#0" expanded="true" />
                 <element signature="e#864#892#0" expanded="true" />
                 <element signature="e#1073#1101#0" expanded="true" />
-                <element signature="e#1706#1734#0" expanded="true" />
-                <element signature="e#1966#1994#0" expanded="true" />
+                <element signature="e#2024#2052#0" expanded="true" />
+                <element signature="e#2285#2313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +89,8 @@
       <file leaf-file-name="main_activity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/java/com/example/seventeen/blissappid/main_activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="630">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="750">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -504,8 +501,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,8 +542,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,8 +583,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,8 +624,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,8 +665,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,8 +706,8 @@
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,22 +733,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/java/com/example/seventeen/blissappid/main_activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="750">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlissAppid_git/BlissAppid/app/src/main/res/layout/activity_main_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26127818" vertical-offset="461" max-vertical-offset="1200">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.26127818" vertical-offset="596" max-vertical-offset="1350">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
           <folding>
             <element signature="e#655#683#0" expanded="true" />
             <element signature="e#864#892#0" expanded="true" />
             <element signature="e#1073#1101#0" expanded="true" />
-            <element signature="e#1706#1734#0" expanded="true" />
-            <element signature="e#1966#1994#0" expanded="true" />
+            <element signature="e#2024#2052#0" expanded="true" />
+            <element signature="e#2285#2313#0" expanded="true" />
           </folding>
         </state>
       </provider>
