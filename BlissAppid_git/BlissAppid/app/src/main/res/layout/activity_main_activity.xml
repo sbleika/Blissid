@@ -8,35 +8,22 @@
     android:baselineAligned="false"
     android:background="@drawable/bakgrunnur">
 
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+    >
 
         <ImageButton
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="@string/button_placeholder"
-        android:src="@drawable/bio"/>
-
-    <!--    <Button
-            android:id="@+id/button2"
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/button_placeholder" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/button_placeholder" />
-    -->
-
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/button_placeholder"
+            android:src="@drawable/bio"
+        />
 
     </LinearLayout>
     <RelativeLayout
@@ -44,17 +31,14 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-
-
         <ImageButton
             android:id="@+id/ja"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/button_placeholder"
             android:layout_alignParentLeft="true"
-            android:src = "@drawable/ja"/>
-
-
+            android:src = "@drawable/ja"
+         />
         <ImageButton
             android:id="@+id/tafla"
             android:layout_width="wrap_content"
@@ -72,11 +56,7 @@
             android:src="@drawable/nei"
             android:layout_gravity="end"
             android:layout_alignParentRight="true"
-
             />
-
     </RelativeLayout>
-
-
-
 </LinearLayout>
+
