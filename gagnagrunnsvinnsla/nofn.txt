@@ -1,4 +1,4 @@
-../BlissAppid_git/BlissSymbols//%.bmp
+../BlissAppid_git/BlissSymbols/%.bmp
 ../BlissAppid_git/BlissSymbols/(karl)klaedskiptingur.bmp
 ../BlissAppid_git/BlissSymbols/(kven)klaedskiptingur.bmp
 ../BlissAppid_git/BlissSymbols/0.bmp
@@ -530,7 +530,6 @@
 ../BlissAppid_git/BlissSymbols/dalur.bmp
 ../BlissAppid_git/BlissSymbols/dansa.bmp
 ../BlissAppid_git/BlissSymbols/dapur.bmp
-../BlissAppid_git/BlissSymbols/data.txt
 ../BlissAppid_git/BlissSymbols/daudi.bmp
 ../BlissAppid_git/BlissSymbols/daudlegur.bmp
 ../BlissAppid_git/BlissSymbols/deila nidur.bmp
