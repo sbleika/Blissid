@@ -7,20 +7,46 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 
 public class main_activity extends Activity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity);
+        // 2 takkar starfsmadur og nothafi
+        Button mynothafibutton;
+        Button mystarfsmadurbutton;
+        mynothafibutton = (Button) findViewById(R.id.button2);
+        mynothafibutton.setOnClickListener(gotonothafiClickListener);
+        mystarfsmadurbutton = (Button) findViewById(R.id.button1);
+        mystarfsmadurbutton.setOnClickListener(gotostarfsmadurClickListener);
+    }
+    OnClickListener gotonothafiClickListener = new OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            // TODO Auto-generated method stub
+            nothafibutton();
+        }
+    };
+    private void nothafibutton(){
+        startActivity(new Intent(this, nothafi.class));
     }
 
-    public void launchBrowser(View view) {
-        Uri uriUrl = Uri.parse("http://haefing.is/blisstafla/is/");
-        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-        startActivity(launchBrowser);
+
+    OnClickListener gotostarfsmadurClickListener = new OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            // TODO Auto-generated method stub
+            starfsmadurbutton();
+        }
+    };
+    private void starfsmadurbutton(){
+        startActivity(new Intent(this, starfsmadur.class));
     }
 
     @Override
@@ -42,4 +68,5 @@ public class main_activity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 }
+
 
