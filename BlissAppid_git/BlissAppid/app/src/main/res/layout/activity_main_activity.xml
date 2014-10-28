@@ -7,7 +7,7 @@ android:paddingLeft="@dimen/activity_horizontal_margin"
 android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin"
 android:background="@drawable/bakgrunnur"
-tools:context="com.Egill.caleo.MainActivity" >
+tools:context="com.example.seventeen.blissappid.MainActivity" >
 
 <TextView
     android:id="@+id/textView1"
@@ -36,7 +36,6 @@ tools:context="com.Egill.caleo.MainActivity" >
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/button_starfsmadur"
-    android:layout_toEndOf="@+id/textView1"
     android:layout_alignTop="@+id/button2"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
