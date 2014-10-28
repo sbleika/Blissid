@@ -6,6 +6,9 @@
 
     <string name="button_placeholder">Ég stór</string>
     <string name="button_browser">link</string>
+    <string name="button_nothafi">Nothafi</string>
+    <string name="button_starfsmadur">Starfsmadur</string>
+    <string name="hallo">Hallo</string>
 
 </resources>
 
