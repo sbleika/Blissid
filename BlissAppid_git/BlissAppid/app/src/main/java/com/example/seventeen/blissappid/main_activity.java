@@ -33,7 +33,7 @@ public class main_activity extends Activity {
         }
     };
     private void nothafibutton(){
-        startActivity(new Intent(this, nothafi.class));
+        startActivity(new Intent(this, nothafi1.class));
     }
 
 
@@ -46,7 +46,7 @@ public class main_activity extends Activity {
         }
     };
     private void starfsmadurbutton(){
-        startActivity(new Intent(this, starfsmadur.class));
+        startActivity(new Intent(this, starfsmadur1.class));
     }
 
     @Override
