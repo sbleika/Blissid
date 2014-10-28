@@ -3,12 +3,13 @@
 
     <string name="app_name">BlissAppid</string>
     <string name="action_settings">Settings</string>
-
     <string name="button_placeholder">Ég stór</string>
     <string name="button_browser">link</string>
     <string name="button_nothafi">Nothafi</string>
     <string name="button_starfsmadur">Starfsmadur</string>
     <string name="hallo">Hallo</string>
+    <string name="title_activity_nothafi1">nothafi1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_starfsmadur1">starfsmadur1</string>
 
 </resources>
-
