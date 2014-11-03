@@ -28,6 +28,14 @@
             android:name=".starfsmadur1"
             android:label="@string/title_activity_starfsmadur1" >
         </activity>
+        <activity
+            android:name=".Bua_til_toflu"
+            android:label="@string/title_activity_bua_til_toflu" >
+        </activity>
+        <activity
+            android:name=".Notkunarskra"
+            android:label="@string/title_activity_notkunarskra" >
+        </activity>
     </application>
 
 </manifest>
