@@ -35,8 +35,7 @@ proguard/
 *.log
 BlissAppid_git/Blisstáknin/Thumbs.db
 BlissAppid_git/Blisstáknin/Thumbs.db
-*.xml
-*.xml
+
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
