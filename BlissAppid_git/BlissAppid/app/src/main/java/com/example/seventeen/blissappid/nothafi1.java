@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 
 public class nothafi1 extends Activity {
@@ -16,6 +18,26 @@ public class nothafi1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nothafi1);
     }
+    /*
+        Button jabutt;
+        jabutt = (Button) findViewById(R.id.ja);
+    }
+
+    public void press() {
+    new CountDownTimer(3000,1000){
+        @Override
+        public void onTick(long millisUntilFinished){
+            jabutt.setBackgroundResource(R.drawable.jafoc);
+        }
+
+        @Override
+        public void onFinish(){
+            //set the new Content of your activity
+            jabutt.setBackgroundResource(R.drawable.ja);
+        }
+    }.start();
+    }
+    */
 
     public void launchBrowser(View view) {
         Uri uriUrl = Uri.parse("http://haefing.is/blisstafla/is/");
