@@ -1,9 +1,12 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class starfsmadur1 extends Activity {
@@ -12,9 +15,38 @@ public class starfsmadur1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starfsmadur1);
+        // 2 takkar starfsmadur og nothafi
+        Button buatiltolfubutton;
+        Button notkunarskrabutton;
+        notkunarskrabutton = (Button) findViewById(R.id.notkunarskra);
+        notkunarskrabutton.setOnClickListener(gotoNotkunarskraClickListener);
+        buatiltolfubutton = (Button) findViewById(R.id.buatiltoflu);
+        buatiltolfubutton.setOnClickListener(gotobuatiltofluClickListener);
+    }
+    View.OnClickListener gotoNotkunarskraClickListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            // TODO Auto-generated method stub
+            Nbutton();
+        }
+    };
+    private void Nbutton(){
+        startActivity(new Intent(this, Notkunarskra.class));
     }
 
 
+    View.OnClickListener gotobuatiltofluClickListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            // TODO Auto-generated method stub
+            BTTbutton();
+        }
+    };
+    private void BTTbutton(){
+        startActivity(new Intent(this, Bua_til_toflu.class));
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
