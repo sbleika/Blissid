@@ -92,7 +92,8 @@
         android:id="@+id/textView11"
         android:layout_below="@+id/textView10"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -102,7 +103,8 @@
         android:id="@+id/textView12"
         android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
