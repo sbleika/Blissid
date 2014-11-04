@@ -27,7 +27,7 @@ public class starfsmadur1 extends Activity {
 
         @Override
         public void onClick(View v) {
-            // TODO Auto-generated method stub
+
             Nbutton();
         }
     };
@@ -40,7 +40,7 @@ public class starfsmadur1 extends Activity {
 
         @Override
         public void onClick(View v) {
-            // TODO Auto-generated method stub
+
             BTTbutton();
         }
     };
