@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class nothafi1 extends Activity {
@@ -17,27 +18,33 @@ public class nothafi1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nothafi1);
-    }
-    /*
-        Button jabutt;
-        jabutt = (Button) findViewById(R.id.ja);
-    }
 
-    public void press() {
-    new CountDownTimer(3000,1000){
-        @Override
-        public void onTick(long millisUntilFinished){
-            jabutt.setBackgroundResource(R.drawable.jafoc);
-        }
 
-        @Override
-        public void onFinish(){
-            //set the new Content of your activity
-            jabutt.setBackgroundResource(R.drawable.ja);
-        }
-    }.start();
+        ImageButton jabutt;
+        jabutt = (ImageButton) findViewById(R.id.ja);
+        jabutt.setOnClickListener(gotoClickListener);
     }
-    */
+View.OnClickListener gotoClickListener = new View.OnClickListener() {
+
+    @Override
+    public void onClick(View v) {
+        final ImageButton jabutt;
+        jabutt = (ImageButton) findViewById(R.id.ja);
+        new CountDownTimer(3000,1000){
+            @Override
+            public void onTick(long millisUntilFinished){
+                jabutt.setBackgroundResource(R.drawable.jafoc);
+            }
+
+            @Override
+            public void onFinish(){
+                //set the new Content of your activity
+                jabutt.setBackgroundResource(R.drawable.ja);
+            }
+        }.start();
+    }
+};
+
 
     public void launchBrowser(View view) {
         Uri uriUrl = Uri.parse("http://haefing.is/blisstafla/is/");
