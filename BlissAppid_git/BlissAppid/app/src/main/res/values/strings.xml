@@ -7,11 +7,14 @@
     <string name="button_browser">link</string>
     <string name="button_nothafi">Nothafi</string>
     <string name="button_starfsmadur">Starfsmadur</string>
+    <string name="button_notkunarskra">Notkunarskra</string>
+    <string name="button_buatiltoflu">Búa til töflu</string>
     <string name="BlissAppid">BlissAppid</string>
     <string name="title_activity_nothafi1">nothafi1</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_starfsmadur1">starfsmadur1</string>
     <string name="tafla">Búa til töflu</string>
-
+    <string name="title_activity_bua_til_toflu">Bua_til_toflu</string>
+    <string name="title_activity_notkunarskra">Notkunarskra</string>
 
 </resources>
