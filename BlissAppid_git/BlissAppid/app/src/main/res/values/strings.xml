@@ -16,5 +16,13 @@
     <string name="tafla">Búa til töflu</string>
     <string name="title_activity_bua_til_toflu">Bua_til_toflu</string>
     <string name="title_activity_notkunarskra">Notkunarskra</string>
+    <string name="settuinn">Settu inn tákn</string>
+    <string name="settuinnnafn">Settu inn nafn á táknum sem þú vilt</string>
+    <string name="settuinnupphafsmynd">Settu inn uppahafsmynd</string>
+    <string name="settuinnmyndupphafsmynd">Settu inn takn fyrir uppahafsmynd</string>
+    <string name="fjorir">4</string>
+    <string name="sex">6</string>
+    <string name="niu">9</string>
+    <string name="tolf">12</string>
 
 </resources>
