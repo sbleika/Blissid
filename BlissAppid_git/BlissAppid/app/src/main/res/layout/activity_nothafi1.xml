@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:text="@string/button_placeholder"
             android:layout_alignParentLeft="true"
-            android:src = "@drawable/button_pressed"
+            android:src = "@drawable/ja_button_pressed"
             />
         <ImageButton
             android:id="@+id/tafla"
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/button_placeholder"
-            android:src="@drawable/nei"
+            android:src = "@drawable/nei_button_pressed"
             android:layout_gravity="end"
             android:layout_alignParentRight="true"
             />
