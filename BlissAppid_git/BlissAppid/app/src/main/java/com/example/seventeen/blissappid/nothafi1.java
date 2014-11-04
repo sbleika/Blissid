@@ -53,7 +53,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             final ImageButton neibutt;
-            neibutt = (ImageButton) findViewById(R.id.ja);
+            neibutt = (ImageButton) findViewById(R.id.nei);
             new CountDownTimer(3000,1000){
                 @Override
                 public void onTick(long millisUntilFinished){
