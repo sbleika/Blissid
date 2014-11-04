@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    tools:context="com.example.seventeen.blissappid.nothafi1"
+    android:background="@drawable/bakgrunnur">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="bottom"
+        >
+
+        <ImageButton
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/button_placeholder"
+            android:src="@drawable/bio"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/ja"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_placeholder"
+            android:layout_alignParentLeft="true"
+            android:src = "@drawable/button_pressed"
+            />
+        <ImageButton
+            android:id="@+id/tafla"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="launchBrowser"
+            android:layout_centerInParent="true"
+            android:text="@string/button_browser"
+            android:src="@drawable/blisstafla"
+            />
+        <ImageButton
+            android:id="@+id/nei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_placeholder"
+            android:src="@drawable/nei"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
