@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class main_activity extends Activity {
@@ -17,18 +18,18 @@ public class main_activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity);
         // 2 takkar starfsmadur og nothafi
-        Button mynothafibutton;
-        Button mystarfsmadurbutton;
-        mynothafibutton = (Button) findViewById(R.id.button2);
+        ImageButton mynothafibutton;
+        ImageButton mystarfsmadurbutton;
+        mynothafibutton = (ImageButton) findViewById(R.id.button2);
         mynothafibutton.setOnClickListener(gotonothafiClickListener);
-        mystarfsmadurbutton = (Button) findViewById(R.id.button1);
+        mystarfsmadurbutton = (ImageButton) findViewById(R.id.button1);
         mystarfsmadurbutton.setOnClickListener(gotostarfsmadurClickListener);
     }
     OnClickListener gotonothafiClickListener = new OnClickListener() {
 
         @Override
         public void onClick(View v) {
-            // TODO Auto-generated method stub
+
             nothafibutton();
         }
     };
@@ -41,7 +42,7 @@ public class main_activity extends Activity {
 
         @Override
         public void onClick(View v) {
-            // TODO Auto-generated method stub
+
             starfsmadurbutton();
         }
     };
