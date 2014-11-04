@@ -22,7 +22,7 @@ public class Bua_til_toflu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bua_til_toflu);
     }
-
+/*
     public void displayOutput()
     {
         File sdcard = Environment.getExternalStorageDirectory();
@@ -45,7 +45,7 @@ public class Bua_til_toflu extends Activity {
         // Assuming that 'output' is the id of your TextView
         output.setText(text);
     }
-
+*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
