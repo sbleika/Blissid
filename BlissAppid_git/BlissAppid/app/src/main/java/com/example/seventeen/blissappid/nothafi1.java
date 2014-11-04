@@ -23,6 +23,10 @@ public class nothafi1 extends Activity {
         ImageButton jabutt;
         jabutt = (ImageButton) findViewById(R.id.ja);
         jabutt.setOnClickListener(gotoClickListener);
+
+        ImageButton neibutt;
+        neibutt = (ImageButton) findViewById(R.id.nei);
+        neibutt.setOnClickListener(gotoneiClickListener);
     }
 View.OnClickListener gotoClickListener = new View.OnClickListener() {
 
@@ -44,6 +48,26 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
         }.start();
     }
 };
+    View.OnClickListener gotoneiClickListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            final ImageButton neibutt;
+            neibutt = (ImageButton) findViewById(R.id.ja);
+            new CountDownTimer(3000,1000){
+                @Override
+                public void onTick(long millisUntilFinished){
+                    neibutt.setBackgroundResource(R.drawable.neifoc);
+                }
+
+                @Override
+                public void onFinish(){
+                    //set the new Content of your activity
+                    neibutt.setBackgroundResource(R.drawable.nei);
+                }
+            }.start();
+        }
+    };
 
 
     public void launchBrowser(View view) {
