@@ -36,6 +36,10 @@
             android:name=".Notkunarskra"
             android:label="@string/title_activity_notkunarskra" >
         </activity>
+        <activity
+            android:name=".bio"
+            android:label="@string/title_activity_bio" >
+        </activity>
     </application>
 
 </manifest>
