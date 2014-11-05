@@ -113,7 +113,7 @@
         android:autoText="false"
         android:editable="true"
         android:text="Settu inn tákn"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/editText5"
         android:layout_toRightOf="@+id/editText4"
         android:layout_toEndOf="@+id/editText4" />
     <EditText
