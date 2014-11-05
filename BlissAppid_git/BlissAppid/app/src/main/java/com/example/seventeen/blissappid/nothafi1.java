@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.ImageButton;
 
 /**
- * Hofunur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthosson
  * Dagsetning: 1.10.2014
  * Lysing: Vidmot fyrir nothafa, tar sem hann getur tjad ja og nei
- * a audskiljanlegan hatt og opnad fulla blisstáknatöflu
+ * a audskiljanlegan hatt og opnad fulla blisstaknatoflu
  */
 public class nothafi1 extends Activity {
     /**
@@ -42,13 +42,13 @@ public class nothafi1 extends Activity {
     }
 
     /**
-     * Ef smellt er á ja takkan
+     * Ef smellt er a ja takkan
      */
 
 View.OnClickListener gotoClickListener = new View.OnClickListener() {
 
     /**
-     * Þegar smellt er á já takkan glóir hann i 3 sekundur
+     * tegar smellt er a ja takkan gloir hann i 3 sekundur
      *
      * @param v er view
      */
@@ -58,7 +58,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
         jabutt = (ImageButton) findViewById(R.id.ja);
         new CountDownTimer(3000,1000){
             /**
-             * breytum bakgrunni á takkanum á meðan við teljum niður
+             * breytum bakgrunni a takkanum a medan vid teljum nidur
              * @param millisUntilFinished timi eftir
              */
             @Override
@@ -67,7 +67,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
             }
 
             /**
-             * breytum bakgrunni á takkanum í upprunalegt ástandi þegar 3 sekundur eru liðnar
+             * breytum bakgrunni a takkanum i upprunalegt astandi tegar 3 sekundur eru lidnar
              */
             @Override
             public void onFinish(){
@@ -78,7 +78,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
     }
 };
     /**
-     * Ef smellt er á nei takkan
+     * Ef smellt er a nei takkan
      */
     View.OnClickListener gotoneiClickListener = new View.OnClickListener() {
         /**
@@ -91,7 +91,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
             neibutt = (ImageButton) findViewById(R.id.nei);
             new CountDownTimer(3000,1000){
                 /**
-                 * breytum bakgrunni á takkanum á meðan við teljum niður
+                 * breytum bakgrunni á takkanum a medan við teljum nidur
                  * @param millisUntilFinished timi eftir
                  */
                 @Override
@@ -100,7 +100,7 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
                 }
 
                 /**
-                 * breytum bakgrunni á takkanum í upprunalegt ástandi þegar 3 sekundur eru liðnar
+                 * breytum bakgrunni á takkanum í upprunalegt astandi tegar 3 sekundur eru lidnar
                  */
                 @Override
                 public void onFinish(){
@@ -131,8 +131,8 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
     }
 
     /**
-     * Tímabundin lausn á að opna fulla blisstáknatöflu
-     * opnar vefsíðu þar sem hækt er að skoða hana (http://haefing.is/blisstafla/is/)
+     * Timabundin lausn a ad opna fulla blisstaknatoflu
+     * opnar vefsidu tar sem haekt er ad skoda hana (http://haefing.is/blisstafla/is/)
      * @param view view
      */
     public void launchBrowser(View view) {

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 /**
- * Hofunur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthosson
  * Dagsetning: 3.11.2014
  * Lysing: Er bara tomur gluggi eins og er
  */

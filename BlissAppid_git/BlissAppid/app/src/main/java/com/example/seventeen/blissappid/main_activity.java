@@ -11,10 +11,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 /**
- * Hofunur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthosson
  * Dagsetning: 28.11.2014
- * Lysing: Upphafsgluggi tar sem haegt er ad velja á milli
- * ad fara í starfsmannavidmot eða notendavidmot
+ * Lysing: Upphafsgluggi tar sem haegt er ad velja a milli
+ * ad fara i starfsmannavidmot eda notendavidmot
  */
 
 public class main_activity extends Activity {
