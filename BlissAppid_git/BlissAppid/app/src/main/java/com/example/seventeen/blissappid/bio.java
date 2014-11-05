@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 /**
  * Hofundur: Egill Orn Sigthosson
- * Dagsetning: 3.11.2014
- * Lysing: Er bara tomur gluggi eins og er
+ * Dagsetning: 4.10.2014
+ * Lysing: inniheldur tofluna sem tengist bio
  */
-
-public class Notkunarskra extends Activity {
+public class bio extends Activity {
     /**
      *
      * @param savedInstanceState save instance
@@ -18,18 +18,18 @@ public class Notkunarskra extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notkunarskra);
+        setContentView(R.layout.activity_bio);
     }
 
     /**
      * Inflate the menu; this adds items to the action bar if it is present.
-     * @param menu menu
+     * @param menu Menu
      * @return true
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.notkunarskra, menu);
+        getMenuInflater().inflate(R.menu.nothafi1, menu);
         return true;
     }
 
@@ -37,11 +37,12 @@ public class Notkunarskra extends Activity {
      * Handle action bar item clicks here. The action bar will
      * automatically handle clicks on the Home/Up button, so long
      * as you specify a parent activity in AndroidManifest.xml.
-     * @param item menuitem
+     * @param item MenuItem
      * @return super.onOptionsItemSelected(item);
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
