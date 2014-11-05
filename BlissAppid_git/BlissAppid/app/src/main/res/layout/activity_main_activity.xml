@@ -16,29 +16,31 @@ tools:context="com.example.seventeen.blissappid.MainActivity">
         android:layout_height="@dimen/textview_height"
         android:layout_width="@dimen/textview_width"
         android:textSize="@dimen/font_size"
-        android:layout_centerInParent="true"
-        />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:linksClickable="true" />
 
 
     <ImageButton
-    android:id="@+id/button2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/button_nothafi"
-    android:src="@drawable/nemandi"
-        android:layout_alignBottom="@+id/textView1"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_nothafi"
+        android:src="@drawable/nemandi"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="242dp" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_starfsmadur"
+        android:src="@drawable/starfsemi"
+        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="50dp" />
-
-    <ImageButton
-    android:id="@+id/button1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/button_starfsmadur"
-    android:src="@drawable/starfsemi"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginRight="224dp" />
 
 </RelativeLayout>

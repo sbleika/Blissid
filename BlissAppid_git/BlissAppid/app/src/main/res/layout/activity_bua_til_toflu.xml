@@ -64,9 +64,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="35dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/settuinn"
         android:id="@+id/textView9"
@@ -88,7 +88,7 @@
 
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText4"
         android:layout_below="@+id/textView10"
         android:layout_alignParentLeft="true"
@@ -98,7 +98,7 @@
 
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText5"
         android:autoText="false"
         android:editable="true"
@@ -106,19 +106,21 @@
         android:layout_alignTop="@+id/editText4"
         android:layout_toRightOf="@+id/editText4"
         android:layout_toEndOf="@+id/editText4" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText6"
         android:autoText="false"
         android:editable="true"
         android:text="Settu inn tákn"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/editText5"
         android:layout_toRightOf="@+id/editText4"
         android:layout_toEndOf="@+id/editText4" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText7"
         android:autoText="false"
         android:editable="true"
@@ -126,9 +128,10 @@
         android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText8"
         android:autoText="false"
         android:editable="true"
@@ -136,9 +139,10 @@
         android:layout_below="@+id/editText6"
         android:layout_toRightOf="@+id/editText7"
         android:layout_toEndOf="@+id/editText7" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText9"
         android:autoText="false"
         android:editable="true"
@@ -146,9 +150,10 @@
         android:layout_below="@+id/editText7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText10"
         android:layout_below="@+id/editText9"
         android:layout_alignParentLeft="true"
@@ -156,9 +161,10 @@
         android:autoText="false"
         android:editable="true"
         android:text="Settu inn tákn" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText11"
         android:autoText="false"
         android:editable="true"
@@ -166,9 +172,10 @@
         android:layout_below="@+id/editText9"
         android:layout_toRightOf="@+id/editText10"
         android:layout_toEndOf="@+id/editText10" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText12"
         android:layout_below="@+id/editText11"
         android:layout_alignParentLeft="true"
@@ -176,9 +183,10 @@
         android:autoText="false"
         android:editable="true"
         android:text="Settu inn tákn" />
+
     <EditText
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/editText13"
         android:autoText="false"
         android:editable="true"
