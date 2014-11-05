@@ -63,7 +63,7 @@ public class DBHelper
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
 
-            Cursor cursor = statement.executeQuery();
+            ResultSet cursor = statement.executeQuery();
             cursor.moveToFirst();
 
             byteImage = cursor.getBlob(0);
