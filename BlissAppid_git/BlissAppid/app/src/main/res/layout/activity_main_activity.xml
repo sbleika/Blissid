@@ -22,22 +22,22 @@ tools:context="com.example.seventeen.blissappid.MainActivity">
 
 
     <ImageButton
-    android:id="@+id/button2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/button_nothafi"
-    android:src="@drawable/nemandi"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_nothafi"
+        android:src="@drawable/nemandi"
         android:layout_alignTop="@+id/button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="242dp" />
 
     <ImageButton
-    android:id="@+id/button1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/button_starfsmadur"
-    android:src="@drawable/starfsemi"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_starfsmadur"
+        android:src="@drawable/starfsemi"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
