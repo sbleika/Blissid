@@ -11,10 +11,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 /**
- * Höfunur: Egill Örn Sigþórsson
+ * Hofunur: Egill Orn Sigthosson
  * Dagsetning: 28.11.2014
- * Lýsing: Upphafsgluggi þar sem hægt er að velja á milli
- * að fara í starfsmannaviðmót eða notendaviðmót
+ * Lysing: Upphafsgluggi tar sem haegt er ad velja á milli
+ * ad fara í starfsmannavidmot eða notendavidmot
  */
 
 public class main_activity extends Activity {
@@ -36,7 +36,7 @@ public class main_activity extends Activity {
     }
     OnClickListener gotonothafiClickListener = new OnClickListener() {
         /**
-         * ef smellt er a nemandi takkan er fallað a nothafibutton()
+         * ef smellt er a nemandi takkan er kallad a fallid nothafibutton()
          * @param v view
          */
         @Override
@@ -47,7 +47,7 @@ public class main_activity extends Activity {
     };
 
     /**
-     * opnar nothafi klasan
+     * opnar nyja gluggan nothafi
      */
     private void nothafibutton(){
         startActivity(new Intent(this, nothafi1.class));
@@ -56,7 +56,7 @@ public class main_activity extends Activity {
 
     OnClickListener gotostarfsmadurClickListener = new OnClickListener() {
         /**
-         * ef smellt er a strassemi takkan er fallað a starfsmadurbutton()
+         * ef smellt er a strassemi takkan er kallad a fallid starfsmadurbutton()
          * @param v view
          */
         @Override
@@ -66,7 +66,7 @@ public class main_activity extends Activity {
     };
 
     /**
-     * opnar starfsmadur1 klasan
+     * opnar nyja gluggan starfsmadur1
      */
     private void starfsmadurbutton(){
         startActivity(new Intent(this, starfsmadur1.class));

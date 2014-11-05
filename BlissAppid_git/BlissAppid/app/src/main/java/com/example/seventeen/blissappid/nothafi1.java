@@ -11,9 +11,10 @@ import android.view.View;
 import android.widget.ImageButton;
 
 /**
- * Höfunur: Egill Örn Sigþórsson
+ * Hofunur: Egill Orn Sigthosson
  * Dagsetning: 1.10.2014
- * Lýsing: Viðmót fyrir nothafa, þar sem hann getur tjáð ja og nei á auðskiljanlegan hátt og opnað fulla blisstáknatöflu
+ * Lysing: Vidmot fyrir nothafa, tar sem hann getur tjad ja og nei
+ * a audskiljanlegan hatt og opnad fulla blisstáknatöflu
  */
 public class nothafi1 extends Activity {
     /**
