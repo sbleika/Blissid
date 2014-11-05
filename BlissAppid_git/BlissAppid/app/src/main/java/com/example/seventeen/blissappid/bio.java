@@ -1,9 +1,11 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 /**
  * Hofundur: Egill Orn Sigthosson
@@ -19,6 +21,11 @@ public class bio extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio);
+
+        ImageButton takn1;
+        takn1 = (ImageButton) findViewById(R.id.takn1);
+        ((ImageButton) takn1).setImageResource(R.drawable.ja);
+
     }
 
     /**
