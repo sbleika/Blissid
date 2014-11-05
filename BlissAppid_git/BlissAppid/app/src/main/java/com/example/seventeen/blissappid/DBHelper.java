@@ -1,4 +1,8 @@
 package com.example.seventeen.blissappid;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
 import java.sql.*;
 /**
  * Created by ivar on 05/11/14.
@@ -45,6 +49,38 @@ public class DBHelper
             String[] empty = new String[0];
             return empty;
         }
+
+    }
+
+    public static Bitmap getSymbolImage(String symbolName)
+    {
+
+        byte[] byteImage = null;
+
+        try
+        {
+            String command = "SELECT image from symbol where name=\"?\";";
+            PreparedStatement statement = conn.prepareStatement(command);
+            statement.setString(1, symbolName);
+
+            Cursor cursor = statement.executeQuery();
+            cursor.moveToFirst();
+
+            byteImage = cursor.getBlob(0);
+
+            Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
+            return image;
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("sqlerror in DBHelper.getSymbolImage"+e.getMessage());
+            String[] empty = new String[0];
+            return null;
+        };
+
+        return null;
+
 
     }
 
