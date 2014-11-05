@@ -110,7 +110,9 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
             }.start();
         }
     };
-
+    /**
+     * Ef smellt er a bio takkan
+     */
     View.OnClickListener gotoBioClickListener = new View.OnClickListener() {
         /**
          * ef smellt er a bio takkan er kallad a fallid bio()
