@@ -34,6 +34,11 @@ public class nothafi1 extends Activity {
         ImageButton neibutt;
         neibutt = (ImageButton) findViewById(R.id.nei);
         neibutt.setOnClickListener(gotoneiClickListener);
+
+        ImageButton bio;
+        bio = (ImageButton) findViewById(R.id.bio);
+        bio.setOnClickListener(gotoBioClickListener);
+
     }
 
     /**
@@ -105,6 +110,25 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
             }.start();
         }
     };
+
+    View.OnClickListener gotoBioClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            bio();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan bio
+     */
+    private void bio(){
+        startActivity(new Intent(this, bio.class));
+    }
 
     /**
      * Tímabundin lausn á að opna fulla blisstáknatöflu
