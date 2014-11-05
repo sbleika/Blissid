@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+/**
+ * Höfunur: Egill Örn Sigþórsson
+ * Dagsetning: 3.11.2014
+ * Lýsing:
+ */
 
 public class Notkunarskra extends Activity {
 
