@@ -13,7 +13,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+/**
+ * Höfunur: Egill Örn Sigþórsson
+ * Dagsetning: 3.11.2014
+ * Lýsing:
+ */
 
 public class Bua_til_toflu extends Activity {
 

@@ -7,7 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
+/**
+ * Höfunur: Egill Örn Sigþórsson
+ * Dagsetning: 28.10.2014
+ * Lýsing:
+ */
 
 public class starfsmadur1 extends Activity {
 
