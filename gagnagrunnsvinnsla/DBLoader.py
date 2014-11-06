@@ -6,7 +6,11 @@ cursor=conn.cursor()
 
 #create sql database
 cursor.execute(" CREATE TABLE symbols (name text, image blob);");
+<<<<<<< HEAD
 cursor.execute(" CREATE TABLE tables (name text, image text);");
+=======
+cursor.execute(" CREATE TABLE tables (name text, image blob);");
+>>>>>>> 26c53bbbae13ace20f35bbd6354a73c58d2779ff
 cursor.execute(" CREATE TABLE tableSymbols (tablename text, symbolname text, posX int, posY int);");
 
 
