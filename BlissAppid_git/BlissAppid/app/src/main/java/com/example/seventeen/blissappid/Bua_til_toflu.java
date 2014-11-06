@@ -14,7 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 /**
- * Hofundur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthorsson
  * Dagsetning: 3.11.2014
  * Lysing: Kominn beinagrind fyir ad getad buid til nyja toflu
  */

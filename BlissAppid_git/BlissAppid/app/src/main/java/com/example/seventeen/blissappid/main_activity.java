@@ -11,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 /**
- * Hofundur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthorsson
  * Dagsetning: 28.11.2014
  * Lysing: Upphafsgluggi tar sem haegt er ad velja a milli
  * ad fara i starfsmannavidmot eda notendavidmot
