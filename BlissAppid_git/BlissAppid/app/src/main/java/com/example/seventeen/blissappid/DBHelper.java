@@ -52,7 +52,7 @@ public class DBHelper
 
     }
 
-    public static Bitmap getSymbolImage(String symbolName)
+    public Bitmap getSymbolImage(String symbolName)
     {
 
         byte[] byteImage = null;
@@ -64,7 +64,7 @@ public class DBHelper
             statement.setString(1, symbolName);
 
             ResultSet cursor = statement.executeQuery();
-            cursor.beforeFirst();
+            cursor.first();
 
 
             Blob blobImage = cursor.getBlob(0);
