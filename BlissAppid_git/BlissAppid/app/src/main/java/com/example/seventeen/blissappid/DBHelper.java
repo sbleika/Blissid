@@ -64,9 +64,13 @@ public class DBHelper
             statement.setString(1, symbolName);
 
             ResultSet cursor = statement.executeQuery();
-            cursor.moveToFirst();
+            cursor.beforeFirst();
 
-            byteImage = cursor.getBlob(0);
+
+            Blob blobImage = cursor.getBlob(0);
+
+            int blobLength = (int) blobImage.length();
+            byteImage = blobImage.getBytes(1.blobLength);
 
             Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
             return image;
