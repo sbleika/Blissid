@@ -6,11 +6,18 @@ import android.graphics.BitmapFactory;
 import java.sql.*;
 /**
  * Created by ivar on 05/11/14.
+ * Lysing.............................
  */
 public class DBHelper
 {
+    /**
+     *
+     */
     private static Connection conn =null;
 
+    /**
+     *
+     */
     public DBHelper()
     {
         try
@@ -24,10 +31,14 @@ public class DBHelper
         }
     }
 
-    //Usage:x=DBHelper.getSymbols(tableName)
-    //Before: tableName is a name of a table in the tables database
-    //After: x is a list of the names of symbols belonging to table tableName
-    //or empty if he query failed
+    /**
+     * Usage:x=DBHelper.getSymbols(tableName)
+     * Before: tableName is a name of a table in the tables database
+     * After: x is a list of the names of symbols belonging to table tableName
+     * or empty if he query failed
+     * @param tableName is a name of a table in the tables database
+     * @return see after
+     */
     public String[] getSymbols(String tableName)
     {
         try {
@@ -52,6 +63,11 @@ public class DBHelper
 
     }
 
+    /**
+     *
+     * @param symbolName bla bla
+     * @return blabla
+     */
     public static Bitmap getSymbolImage(String symbolName)
     {
 
@@ -82,9 +98,6 @@ public class DBHelper
             String[] empty = new String[0];
             return null;
         }
-
-        //return null;
-
 
     }
 
