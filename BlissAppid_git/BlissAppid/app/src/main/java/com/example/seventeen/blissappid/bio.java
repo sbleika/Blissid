@@ -23,12 +23,21 @@ public class bio extends Activity {
         setContentView(R.layout.activity_bio);
 
 
-        DBHelper DB = new DBHelper();
+        //DBHelper DB = new DBHelper();
 
         ImageButton takn1;
         takn1 = (ImageButton) findViewById(R.id.takn1);
-        //((ImageButton) takn1).setImageBitmap(ja);
-        ((ImageButton) takn1).setImageBitmap(DBHelper.getSymbolImage("ja"));
+        ((ImageButton) takn1).setImageResource(R.drawable.ja);
+        ImageButton takn2;
+        takn2 = (ImageButton) findViewById(R.id.takn2);
+        ((ImageButton) takn2).setImageResource(R.drawable.poppkorn);
+        ImageButton takn3;
+        takn3 = (ImageButton) findViewById(R.id.takn3);
+        ((ImageButton) takn3).setImageResource(R.drawable.gosdrykkur);
+        ImageButton takn4;
+        takn4 = (ImageButton) findViewById(R.id.takn4);
+        ((ImageButton) takn4).setImageResource(R.drawable.nammi);
+        //((ImageButton) takn1).setImageBitmap(DBHelper.getSymbolImage("ja"));
 /*
         ImageButton takn2;
         takn2 = (ImageButton) findViewById(R.id.takn2);
