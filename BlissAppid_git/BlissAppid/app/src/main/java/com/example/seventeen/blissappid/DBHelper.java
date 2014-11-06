@@ -9,7 +9,7 @@ import java.sql.*;
  */
 public class DBHelper
 {
-    private Connection conn =null;
+    private static Connection conn =null;
 
     public DBHelper()
     {
@@ -52,7 +52,7 @@ public class DBHelper
 
     }
 
-    public Bitmap getSymbolImage(String symbolName)
+    public static Bitmap getSymbolImage(String symbolName)
     {
 
         byte[] byteImage = null;
@@ -70,7 +70,7 @@ public class DBHelper
             Blob blobImage = cursor.getBlob(0);
 
             int blobLength = (int) blobImage.length();
-            byteImage = blobImage.getBytes(1.blobLength);
+            byteImage = blobImage.getBytes(1,blobLength);
 
             Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
             return image;
@@ -81,9 +81,9 @@ public class DBHelper
             System.out.println("sqlerror in DBHelper.getSymbolImage"+e.getMessage());
             String[] empty = new String[0];
             return null;
-        };
+        }
 
-        return null;
+        //return null;
 
 
     }
