@@ -6,17 +6,17 @@ import android.graphics.BitmapFactory;
 import java.sql.*;
 /**
  * Created by ivar on 05/11/14.
- * Lysing.............................
+ * Lysing: DBHelper er til að saekja gogn ur gagnagrunni
  */
 public class DBHelper
 {
     /**
-     *
+     * new connection
      */
-    private static Connection conn =null;
+    private static Connection conn = null;
 
     /**
-     *
+     * make the connection
      */
     public DBHelper()
     {
@@ -64,9 +64,9 @@ public class DBHelper
     }
 
     /**
-     *
-     * @param symbolName bla bla
-     * @return blabla
+     * get the image
+     * @param symbolName su mynd sem vid viljum saekja
+     * @return the image with the symbolname
      */
     public static Bitmap getSymbolImage(String symbolName)
     {
