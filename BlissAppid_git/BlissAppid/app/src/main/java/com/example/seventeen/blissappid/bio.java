@@ -23,25 +23,29 @@ public class bio extends Activity {
         setContentView(R.layout.activity_bio);
 
 
-        DPH = new DBH;
+       /* DPH = new DBH;*/
         
         ImageButton takn1;
         takn1 = (ImageButton) findViewById(R.id.takn1);
-        ((ImageButton) takn1).setImageBitmap(ja);
-
+        //((ImageButton) takn1).setImageBitmap(ja);
+        ((ImageButton) takn1).setImageResource(R.drawable.ja);
+/*
         ImageButton takn2;
-        takn2 = (ImageButton) findViewById(R.id.takn1);
-        ((ImageButton) takn2).setImageBitmap(bio);
+        takn2 = (ImageButton) findViewById(R.id.takn2);
+        //((ImageButton) takn2).setImageBitmap(bio);
+        ((ImageButton) takn2).setImageResource(R.drawable.ja);
 
         ImageButton takn3;
-        takn3 = (ImageButton) findViewById(R.id.takn1);
-        ((ImageButton) takn3).setImageBitmap(X);
+        takn3 = (ImageButton) findViewById(R.id.takn3);
+        //((ImageButton) takn3).setImageBitmap(X);
+        ((ImageButton) takn3).setImageResource(R.drawable.ja);
 
         ImageButton takn4;
-        takn4 = (ImageButton) findViewById(R.id.takn1);
-        ((ImageButton) takn4).setImageBitmap(W);
+        takn4 = (ImageButton) findViewById(R.id.takn4);
+        //((ImageButton) takn4).setImageBitmap(W);
+        ((ImageButton) takn4).setImageResource(R.drawable.ja);
 
-
+*/
     }
 
     /**
