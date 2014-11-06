@@ -38,23 +38,7 @@ public class bio extends Activity {
         takn4 = (ImageButton) findViewById(R.id.takn4);
         ((ImageButton) takn4).setImageResource(R.drawable.nammi);
         //((ImageButton) takn1).setImageBitmap(DBHelper.getSymbolImage("ja"));
-/*
-        ImageButton takn2;
-        takn2 = (ImageButton) findViewById(R.id.takn2);
-        //((ImageButton) takn2).setImageBitmap(bio);
-        ((ImageButton) takn2).setImageResource(R.drawable.ja);
 
-        ImageButton takn3;
-        takn3 = (ImageButton) findViewById(R.id.takn3);
-        //((ImageButton) takn3).setImageBitmap(X);
-        ((ImageButton) takn3).setImageResource(R.drawable.ja);
-
-        ImageButton takn4;
-        takn4 = (ImageButton) findViewById(R.id.takn4);
-        //((ImageButton) takn4).setImageBitmap(W);
-        ((ImageButton) takn4).setImageResource(R.drawable.ja);
-
-*/
     }
 
     /**
