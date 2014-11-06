@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 /**
- * Hofundur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthorsson
  * Dagsetning: 1.10.2014
  * Lysing: Vidmot fyrir nothafa, tar sem hann getur tjad ja og nei
  * a audskiljanlegan hatt og opnad fulla blisstaknatoflu
