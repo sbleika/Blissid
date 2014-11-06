@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 
 /**
- * Hofundur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthrosson
  * Dagsetning: 4.10.2014
  * Lysing: inniheldur tofluna sem tengist bio
  */
@@ -22,12 +22,13 @@ public class bio extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio);
 
-
+/*
         DPH = new DBH;
-        
+
         ImageButton takn1;
         takn1 = (ImageButton) findViewById(R.id.takn1);
         ((ImageButton) takn1).setImageBitmap(ja);
+        //((ImageButton) takn1).setImageResource(R.drawable.ja);
 
         ImageButton takn2;
         takn2 = (ImageButton) findViewById(R.id.takn1);
@@ -41,7 +42,7 @@ public class bio extends Activity {
         takn4 = (ImageButton) findViewById(R.id.takn1);
         ((ImageButton) takn4).setImageBitmap(W);
 
-
+*/
     }
 
     /**

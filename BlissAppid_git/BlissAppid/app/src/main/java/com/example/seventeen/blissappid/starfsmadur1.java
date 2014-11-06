@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 /**
- * Hofundur: Egill Orn Sigthosson
+ * Hofundur: Egill Orn Sigthorsson
  * Dagsetning: 28.10.2014
  * Lysing: vidmot fyrir starfsmann tar sem hann getur valid
  * um ad fara i notkunarskra eda ad bua til toflu
