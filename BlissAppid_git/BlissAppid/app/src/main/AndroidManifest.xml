@@ -40,6 +40,10 @@
             android:name=".bio"
             android:label="@string/title_activity_bio" >
         </activity>
+        <activity
+            android:name=".full_blisstafla"
+            android:label="@string/title_activity_full_blisstafla" >
+        </activity>
     </application>
 
 </manifest>
