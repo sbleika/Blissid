@@ -28,10 +28,10 @@ public class main_activity extends Activity {
         setContentView(R.layout.activity_main_activity);
         // 2 takkar starfsmadur og nothafi
         ImageButton mynothafibutton;
-        ImageButton mystarfsmadurbutton;
+        Button mystarfsmadurbutton;
         mynothafibutton = (ImageButton) findViewById(R.id.button2);
         mynothafibutton.setOnClickListener(gotonothafiClickListener);
-        mystarfsmadurbutton = (ImageButton) findViewById(R.id.button1);
+        mystarfsmadurbutton = (Button) findViewById(R.id.button1);
         mystarfsmadurbutton.setOnClickListener(gotostarfsmadurClickListener);
     }
     OnClickListener gotonothafiClickListener = new OnClickListener() {
