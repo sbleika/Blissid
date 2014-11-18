@@ -1,6 +1,7 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,4 +38,6 @@ public class full_blisstafla extends Activity {
 
     public void launchBrowser(View view) {
     }
+
+
 }

@@ -40,10 +40,9 @@
             android:src = "@drawable/ja_button_pressed"
             />
         <ImageButton
-            android:id="@+id/tafla"
+            android:id="@+id/ftafla"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:onClick="launchBrowser"
             android:layout_centerInParent="true"
             android:text="@string/button_browser"
             android:src="@drawable/blisstafla"
