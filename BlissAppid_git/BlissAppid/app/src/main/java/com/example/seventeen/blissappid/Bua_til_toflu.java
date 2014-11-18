@@ -6,7 +6,10 @@ import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,9 +34,41 @@ public class Bua_til_toflu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bua_til_toflu);
 
-        ImageButton maketable;
-        maketable = (ImageButton) findViewById(R.id.maketable);
+        Button maketable;
+        maketable = (Button) findViewById(R.id.maketable);
         maketable.setOnClickListener(gotomaketableClickListener);
+
+
+
+
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+        EditText upphafsmynd;
+        upphafsmynd = (EditText) findViewById(R.id.textView9);
+        String txt9=upphafsmynd.getText().toString();
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radioButton:
+                if (checked) {
+                    upphafsmynd.setText("fjorir");
+                    break;
+                }
+            case R.id.radioButton2:
+                if (checked)
+                    // Ninjas rule
+                    break;
+            case R.id.radioButton5:
+                if (checked)
+                    // Ninjas rule
+                    break;
+            case R.id.radioButton6:
+                if (checked)
+                    // Ninjas rule
+                    break;
+        }
     }
 
     /**
@@ -47,7 +82,7 @@ public class Bua_til_toflu extends Activity {
         @Override
         public void onClick(View v) {
 
-            MakeTable.maketable();
+            MakeTable.maketablefun(12);
         }
     };
 
