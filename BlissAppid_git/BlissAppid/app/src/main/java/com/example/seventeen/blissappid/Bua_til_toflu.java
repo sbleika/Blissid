@@ -38,12 +38,14 @@ public class Bua_til_toflu extends Activity {
         maketable = (Button) findViewById(R.id.maketable);
         maketable.setOnClickListener(gotomaketableClickListener);
 
-        String txt9=upphafsmynd.getText().toString();
+       // String txt9=upphafsmynd.getText().toString();
 
     }
 
-    EditText upphafsmynd = (EditText) findViewById(R.id.textView9);
-    EditText nr1 = (EditText) findViewById(R.id.editText4);
+    //EditText upphafsmynd = (EditText) findViewById(R.id.textView9);
+    //EditText nr1 = (EditText) findViewById(R.id.editText4);
+    //
+    /*
     EditText nr2 = (EditText) findViewById(R.id.editText5);
     EditText nr3 = (EditText) findViewById(R.id.editText7);
     EditText nr4 = (EditText) findViewById(R.id.editText6);
@@ -54,21 +56,23 @@ public class Bua_til_toflu extends Activity {
     EditText nr9 = (EditText) findViewById(R.id.editText12);
     EditText nr10 = (EditText) findViewById(R.id.editText13);
     EditText nr11 = (EditText) findViewById(R.id.editText14);
-    EditText nr12 = (EditText) findViewById(R.id.editText15);
+    EditText nr12 = (EditText) findViewById(R.id.editText15);/*/
 
-
+/*
     public void onupphafsmyndClicked(View view) {
         upphafsmynd.setText("");
     }
 
-    String _Radiochecked = "0";
+    String _Radiochecked = "0";*/
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
+      //nr5.setVisibility(View.GONE);
+      //nr6.setVisibility(View.GONE);
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        /*switch(view.getId()) {
             case R.id.radioButton:
                 if (checked) {
                     _Radiochecked = "4";
@@ -114,7 +118,7 @@ public class Bua_til_toflu extends Activity {
                     nr12.setVisibility(View.VISIBLE);
                     break;
                 }
-        }
+        }*/
     }
 
     /**
