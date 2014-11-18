@@ -44,6 +44,10 @@
             android:name=".full_blisstafla"
             android:label="@string/title_activity_full_blisstafla" >
         </activity>
+        <activity
+            android:name=".tafla11"
+            android:label="@string/title_activity_tafla11" >
+        </activity>
     </application>
 
 </manifest>
