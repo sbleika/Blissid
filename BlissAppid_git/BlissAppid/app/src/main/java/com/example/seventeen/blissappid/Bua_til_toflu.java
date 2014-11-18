@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,31 +30,27 @@ public class Bua_til_toflu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bua_til_toflu);
-    }
-/*
-    public void displayOutput()
-    {
-        File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"/TextFile.txt");
-        StringBuilder text = new StringBuilder();
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String line;
-            while ((line = br.readLine()) != null) {
-                text.append(line);
-                text.append('\n');
-            }
-        }
-        catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "Error reading file!", Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        }
 
-        TextView output=(TextView) findViewById(R.id.output);
-        // Assuming that 'output' is the id of your TextView
-        output.setText(text);
+        ImageButton maketable;
+        maketable = (ImageButton) findViewById(R.id.maketable);
+        maketable.setOnClickListener(gotomaketableClickListener);
     }
-*/
+
+    /**
+     * Ef smellt er a Búa til töflu takkan
+     */
+    View.OnClickListener gotomaketableClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a Búa til töflu takkan er kallad a fallid maketable()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            MakeTable.maketable();
+        }
+    };
+
 
     /**
      * Inflate the menu; this adds items to the action bar if it is present.
@@ -82,3 +80,27 @@ public class Bua_til_toflu extends Activity {
         return super.onOptionsItemSelected(item);
     }
 }
+/*
+    public void displayOutput()
+    {
+        File sdcard = Environment.getExternalStorageDirectory();
+        File file = new File(sdcard,"/TextFile.txt");
+        StringBuilder text = new StringBuilder();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = br.readLine()) != null) {
+                text.append(line);
+                text.append('\n');
+            }
+        }
+        catch (IOException e) {
+            Toast.makeText(getApplicationContext(), "Error reading file!", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+
+        TextView output=(TextView) findViewById(R.id.output);
+        // Assuming that 'output' is the id of your TextView
+        output.setText(text);
+    }
+*/
