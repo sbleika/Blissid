@@ -39,6 +39,10 @@ public class nothafi1 extends Activity {
         bio = (ImageButton) findViewById(R.id.bio);
         bio.setOnClickListener(gotoBioClickListener);
 
+        ImageButton ftafla;
+        ftafla = (ImageButton) findViewById(R.id.ftafla);
+        ftafla.setOnClickListener(gotoftaflaClickListener);
+
     }
 
     /**
@@ -133,15 +137,27 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
     }
 
     /**
-     * Timabundin lausn a ad opna fulla blisstaknatoflu
-     * opnar vefsidu tar sem haekt er ad skoda hana (http://haefing.is/blisstafla/is/)
-     * @param view view
+     * Ef smellt er a bio takkan
      */
-    public void launchBrowser(View view) {
-        Uri uriUrl = Uri.parse("http://haefing.is/blisstafla/is/");
-        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-        startActivity(launchBrowser);
+    View.OnClickListener gotoftaflaClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            ftafla();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan ftafla
+     */
+    private void ftafla(){
+        startActivity(new Intent(this, full_blisstafla.class));
     }
+
 
     /**
      * Inflate the menu; this adds items to the action bar if it is present.
