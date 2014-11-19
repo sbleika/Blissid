@@ -19,6 +19,26 @@ public class full_blisstafla extends Activity {
         ImageButton t11;
         t11 = (ImageButton) findViewById(R.id.t11);
         t11.setOnClickListener(gototafla11ClickListener);
+
+        ImageButton t12;
+        t12 = (ImageButton) findViewById(R.id.t12);
+        t12.setOnClickListener(gototafla12ClickListener);
+
+        ImageButton t13;
+        t13 = (ImageButton) findViewById(R.id.t13);
+        t13.setOnClickListener(gototafla13ClickListener);
+
+        ImageButton t14;
+        t14 = (ImageButton) findViewById(R.id.t14);
+        t14.setOnClickListener(gototafla14ClickListener);
+
+        ImageButton t15;
+        t15 = (ImageButton) findViewById(R.id.t15);
+        t15.setOnClickListener(gototafla15ClickListener);
+
+        ImageButton t16;
+        t16 = (ImageButton) findViewById(R.id.t16);
+        t16.setOnClickListener(gototafla16ClickListener);
     }
 
 
@@ -55,10 +75,110 @@ public class full_blisstafla extends Activity {
     };
 
     /**
-     * opnar nyja gluggan bio
+     * opnar nyja gluggan tafla11
      */
     private void t11(){
         startActivity(new Intent(this, tafla11.class));
+    }
+
+
+    View.OnClickListener gototafla12ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            t12();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla12
+     */
+    private void t12(){
+        startActivity(new Intent(this, tafla12.class));
+    }
+
+
+    View.OnClickListener gototafla13ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            t13();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla13
+     */
+    private void t13(){
+        startActivity(new Intent(this, tafla13.class));
+    }
+
+
+    View.OnClickListener gototafla14ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            t14();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla14
+     */
+    private void t14(){
+        startActivity(new Intent(this, tafla14.class));
+    }
+
+
+    View.OnClickListener gototafla15ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            t15();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla15
+     */
+    private void t15(){
+        startActivity(new Intent(this, tafla15.class));
+    }
+
+
+    View.OnClickListener gototafla16ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            t16();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla16
+     */
+    private void t16(){
+        startActivity(new Intent(this, tafla16.class));
     }
 
 
