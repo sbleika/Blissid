@@ -47,7 +47,7 @@ public class Bua_til_toflu extends Activity {
 
     public void onupphafsmyndClicked(View view) {
         EditText upphafsmynd;
-        upphafsmynd = (EditText) findViewById(R.id.textView9);
+        upphafsmynd = (EditText) view;  // refactoring !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         upphafsmynd.setText("");
     }
 
@@ -56,8 +56,6 @@ public class Bua_til_toflu extends Activity {
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-      //nr5.setVisibility(View.GONE);
-      //nr6.setVisibility(View.GONE);
 
         EditText nr1;
         nr1 = (EditText) findViewById(R.id.editText4);
