@@ -23,7 +23,7 @@ public class DBHelper
         try
         {
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:../../sym.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:../../symbols.db");
         } catch ( Exception e )
         {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
