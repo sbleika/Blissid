@@ -27,6 +27,7 @@ public class DBHelper
         } catch ( Exception e )
         {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.err.println("failed connection");
             System.exit(0);
         }
     }
@@ -66,6 +67,7 @@ public class DBHelper
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
+            System.err.println("failed getsymbols");
             String[] empty = new String[0];
             return empty;
         }
@@ -104,6 +106,7 @@ public class DBHelper
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbolImage"+e.getMessage());
+            System.err.println("failed getsymbolImage");
             String[] empty = new String[0];
             return null;
         }
