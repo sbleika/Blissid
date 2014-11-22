@@ -6,6 +6,7 @@ package com.example.seventeen.blissappid;
 public class MakeTable {
 
     public static boolean maketablefun(int x) {
+
         return true;
     }
 }

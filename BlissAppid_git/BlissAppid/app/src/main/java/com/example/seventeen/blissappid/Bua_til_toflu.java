@@ -1,6 +1,7 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,8 +53,6 @@ public class Bua_til_toflu extends Activity {
         upphafsmynd.setText("");
     }
 
-
-
     public void onRadioButtonClicked(View view) {
 
         EditText nr1;
@@ -79,6 +79,9 @@ public class Bua_til_toflu extends Activity {
         nr11 = (EditText) findViewById(R.id.editText14);
         EditText nr12;
         nr12 = (EditText) findViewById(R.id.editText15);
+
+        RadioButton radiobutton6;
+        radiobutton6 = (RadioButton) findViewById(R.id.radioButton2);
 
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -144,7 +147,7 @@ public class Bua_til_toflu extends Activity {
     }
 
     /**
-     * Ef smellt er a Búa til töflu takkan
+     * Ef smellt er a Búa til töflu takkan er kallad a fallid Tbutton() og maketable.maketablefun
      */
     View.OnClickListener gotomaketableClickListener = new View.OnClickListener() {
         /**
@@ -155,8 +158,16 @@ public class Bua_til_toflu extends Activity {
         public void onClick(View v) {
 
             MakeTable.maketablefun(12);
+            Tbutton();
         }
     };
+
+    /**
+     * opnar nyja gluggan starfsmadur1
+     */
+    private void Tbutton(){
+        startActivity(new Intent(this, starfsmadur1.class));
+    }
 
 
     /**
@@ -169,7 +180,9 @@ public class Bua_til_toflu extends Activity {
 
         getMenuInflater().inflate(R.menu.bua_til_toflu, menu);
         return true;
+
     }
+
     /**
      * Handle action bar item clicks here. The action bar will
      * automatically handle clicks on the Home/Up button, so long
