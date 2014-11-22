@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
+
 import java.util.List;
 
 /**
@@ -42,8 +43,8 @@ private static SQLiteDatabase db = null;
     {
            //TODO: adjust this
         try {
-            conn.close();
-        } catch (SQLException e) {
+            db.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -65,7 +66,7 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, tableName);
             */
-            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName):
+            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName);
 
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
