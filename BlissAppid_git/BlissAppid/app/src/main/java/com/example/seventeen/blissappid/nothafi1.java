@@ -26,7 +26,13 @@ public class nothafi1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nothafi1);
 
+        makeOnclickListeners();
+    }
 
+    /**
+     *
+     */
+    public void makeOnclickListeners(){
         ImageButton jabutt;
         jabutt = (ImageButton) findViewById(R.id.ja);
         jabutt.setOnClickListener(gotoClickListener);
@@ -42,7 +48,6 @@ public class nothafi1 extends Activity {
         ImageButton ftafla;
         ftafla = (ImageButton) findViewById(R.id.ftafla);
         ftafla.setOnClickListener(gotoftaflaClickListener);
-
     }
 
     /**
@@ -124,7 +129,6 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
          */
         @Override
         public void onClick(View v) {
-
             bio();
         }
     };
@@ -146,7 +150,6 @@ View.OnClickListener gotoClickListener = new View.OnClickListener() {
          */
         @Override
         public void onClick(View v) {
-
             ftafla();
         }
     };

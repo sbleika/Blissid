@@ -5,8 +5,8 @@ package com.example.seventeen.blissappid;
  */
 public class MakeTable {
 
-    public static boolean maketablefun(int x) {
-
+    public static boolean maketablefun(String upphafstakn) {
+        // make new imagebutton...
         return true;
     }
 }
