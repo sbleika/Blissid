@@ -43,9 +43,6 @@
         android:layout_height="wrap_content"
         android:text="@string/fjorir"
         android:id="@+id/radioButton"
-        android:layout_below="@+id/textView9"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
@@ -53,9 +50,6 @@
         android:layout_height="wrap_content"
         android:text="@string/sex"
         android:id="@+id/radioButton2"
-        android:layout_below="@+id/radioButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
@@ -63,9 +57,6 @@
         android:layout_height="wrap_content"
         android:text="@string/niu"
         android:id="@+id/radioButton5"
-        android:layout_below="@+id/radioButton2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
@@ -73,9 +64,6 @@
         android:layout_height="wrap_content"
         android:text="@string/tolf"
         android:id="@+id/radioButton6"
-        android:layout_below="@+id/radioButton5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
     <EditText
@@ -87,7 +75,7 @@
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,7 +97,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="@string/settuinn"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -119,7 +107,7 @@
         android:layout_alignTop="@+id/editText4"
         android:layout_toRightOf="@+id/editText4"
         android:layout_toEndOf="@+id/editText4"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -129,7 +117,7 @@
         android:layout_below="@+id/editText5"
         android:layout_toRightOf="@+id/editText4"
         android:layout_toEndOf="@+id/editText4"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -139,7 +127,7 @@
         android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -149,7 +137,7 @@
         android:layout_below="@+id/editText6"
         android:layout_toRightOf="@+id/editText7"
         android:layout_toEndOf="@+id/editText7"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -159,7 +147,7 @@
         android:layout_below="@+id/editText7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -169,7 +157,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="@string/settuinn"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -179,7 +167,7 @@
         android:layout_below="@+id/editText9"
         android:layout_toRightOf="@+id/editText10"
         android:layout_toEndOf="@+id/editText10"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -189,7 +177,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="@string/settuinn"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <EditText
         android:layout_width="140dp"
@@ -199,14 +187,14 @@
         android:layout_below="@+id/editText11"
         android:layout_toRightOf="@+id/editText12"
         android:layout_toEndOf="@+id/editText12"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
     <EditText
         android:layout_width="140dp"
         android:layout_height="35dp"
         android:id="@+id/editText14"
         android:text="@string/settuinn"
         android:layout_below="@+id/editText12"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
     <EditText
         android:layout_width="140dp"
         android:layout_height="35dp"
@@ -215,7 +203,7 @@
         android:layout_below="@+id/editText13"
         android:layout_toRightOf="@+id/editText14"
         android:layout_toEndOf="@+id/editText14"
-        android:onClick="onupphafsmyndClicked"/>
+        android:onClick="onTextClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -237,7 +225,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/oll_takn"
             android:id="@+id/taknalist" />
     </ScrollView>
 
