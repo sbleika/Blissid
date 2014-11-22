@@ -42,6 +42,53 @@ public class Bua_til_toflu extends Activity {
 
        // String txt9=upphafsmynd.getText().toString();
 
+        TextView taknalist;
+        taknalist = (TextView)findViewById(R.id.taknalist);
+        try {
+            String cardPath = String.valueOf(Environment.getExternalStorageDirectory());
+            BufferedReader r = new BufferedReader(new FileReader(cardPath + "/nofn1.txt"));
+            StringBuilder total = new StringBuilder();
+            String line;
+            try {
+                while((line = r.readLine()) != null) {
+                    total.append(line);
+                    total.append("\n");
+                }
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            taknalist.setText(total.toString());
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+// then get the TextView and set its text
+
+
+/*
+        try {
+            String cardPath = String.valueOf(Environment.getExternalStorageDirectory());
+            FileReader fr = new FileReader(cardPath + "/nofn1.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String line = null;
+            try {
+                while(br.readLine()!=null)
+                {
+                    line = br.readLine();
+                    taknalist.append(line);
+                    taknalist.append("\n");
+                }
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }*/
+
     }
 
     //
