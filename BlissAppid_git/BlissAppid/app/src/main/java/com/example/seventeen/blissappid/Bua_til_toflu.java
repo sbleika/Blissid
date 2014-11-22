@@ -42,28 +42,16 @@ public class Bua_til_toflu extends Activity {
 
     }
 
-    //EditText upphafsmynd = (EditText) findViewById(R.id.textView9);
-    //EditText nr1 = (EditText) findViewById(R.id.editText4);
     //
-    /*
-    EditText nr2 = (EditText) findViewById(R.id.editText5);
-    EditText nr3 = (EditText) findViewById(R.id.editText7);
-    EditText nr4 = (EditText) findViewById(R.id.editText6);
-    EditText nr5 = (EditText) findViewById(R.id.editText9);
-    EditText nr6 = (EditText) findViewById(R.id.editText8);
-    EditText nr7 = (EditText) findViewById(R.id.editText10);
-    EditText nr8 = (EditText) findViewById(R.id.editText11);
-    EditText nr9 = (EditText) findViewById(R.id.editText12);
-    EditText nr10 = (EditText) findViewById(R.id.editText13);
-    EditText nr11 = (EditText) findViewById(R.id.editText14);
-    EditText nr12 = (EditText) findViewById(R.id.editText15);/*/
 
-/*
+
     public void onupphafsmyndClicked(View view) {
+        EditText upphafsmynd;
+        upphafsmynd = (EditText) findViewById(R.id.textView9);
         upphafsmynd.setText("");
     }
 
-    String _Radiochecked = "0";*/
+    String _Radiochecked = "0";
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -71,8 +59,33 @@ public class Bua_til_toflu extends Activity {
       //nr5.setVisibility(View.GONE);
       //nr6.setVisibility(View.GONE);
 
+        EditText nr1;
+        nr1 = (EditText) findViewById(R.id.editText4);
+        EditText nr2;
+        nr2 = (EditText) findViewById(R.id.editText5);
+        EditText nr3;
+        nr3 = (EditText) findViewById(R.id.editText7);
+        EditText nr4;
+        nr4 = (EditText) findViewById(R.id.editText6);
+        EditText nr5;
+        nr5 = (EditText) findViewById(R.id.editText9);
+        EditText nr6;
+        nr6 = (EditText) findViewById(R.id.editText8);
+        EditText nr7;
+        nr7 = (EditText) findViewById(R.id.editText10);
+        EditText nr8;
+        nr8 = (EditText) findViewById(R.id.editText11);
+        EditText nr9;
+        nr9 = (EditText) findViewById(R.id.editText12);
+        EditText nr10;
+        nr10 = (EditText) findViewById(R.id.editText13);
+        EditText nr11;
+        nr11 = (EditText) findViewById(R.id.editText14);
+        EditText nr12;
+        nr12 = (EditText) findViewById(R.id.editText15);
+
         // Check which radio button was clicked
-        /*switch(view.getId()) {
+        switch(view.getId()) {
             case R.id.radioButton:
                 if (checked) {
                     _Radiochecked = "4";
@@ -118,7 +131,7 @@ public class Bua_til_toflu extends Activity {
                     nr12.setVisibility(View.VISIBLE);
                     break;
                 }
-        }*/
+        }
     }
 
     /**
