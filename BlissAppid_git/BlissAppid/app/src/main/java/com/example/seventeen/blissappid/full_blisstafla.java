@@ -98,7 +98,7 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla12
      */
     private void t12(){
-        startActivity(new Intent(this, tafla12.class));
+        startActivity(new Intent(this, tafla11.class));
     }
 
 
@@ -118,7 +118,7 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla13
      */
     private void t13(){
-        startActivity(new Intent(this, tafla13.class));
+        startActivity(new Intent(this, tafla11.class));
     }
 
 
@@ -138,7 +138,7 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla14
      */
     private void t14(){
-        startActivity(new Intent(this, tafla14.class));
+        startActivity(new Intent(this, tafla11.class));
     }
 
 
@@ -158,7 +158,7 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla15
      */
     private void t15(){
-        startActivity(new Intent(this, tafla15.class));
+        startActivity(new Intent(this, tafla11.class));
     }
 
 
@@ -178,7 +178,7 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla16
      */
     private void t16(){
-        startActivity(new Intent(this, tafla16.class));
+        startActivity(new Intent(this, tafla11.class));
     }
 
 

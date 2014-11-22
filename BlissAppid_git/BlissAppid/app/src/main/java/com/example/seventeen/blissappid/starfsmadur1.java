@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
 /**
  * Hofundur: Egill Orn Sigthorsson
  * Dagsetning: 28.10.2014
@@ -24,11 +26,11 @@ public class starfsmadur1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starfsmadur1);
         // 2 takkar starfsmadur og nothafi
-        Button buatiltolfubutton;
-        Button notkunarskrabutton;
-        notkunarskrabutton = (Button) findViewById(R.id.notkunarskra);
+        ImageButton buatiltolfubutton;
+        ImageButton notkunarskrabutton;
+        notkunarskrabutton = (ImageButton) findViewById(R.id.notkunarskra);
         notkunarskrabutton.setOnClickListener(gotoNotkunarskraClickListener);
-        buatiltolfubutton = (Button) findViewById(R.id.buatiltoflu);
+        buatiltolfubutton = (ImageButton) findViewById(R.id.buatiltoflu);
         buatiltolfubutton.setOnClickListener(gotobuatiltofluClickListener);
     }
     View.OnClickListener gotoNotkunarskraClickListener = new View.OnClickListener() {

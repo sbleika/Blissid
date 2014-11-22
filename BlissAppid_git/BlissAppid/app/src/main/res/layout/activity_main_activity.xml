@@ -30,15 +30,15 @@ tools:context="com.example.seventeen.blissappid.MainActivity">
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp" />
 
-    <Button
+
+    <ImageButton
+        android:src="@drawable/starfsmennli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Starfsmenn"
         android:id="@+id/button1"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:clickable="true" />
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
