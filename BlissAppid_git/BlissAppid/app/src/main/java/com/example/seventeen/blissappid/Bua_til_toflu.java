@@ -51,11 +51,9 @@ public class Bua_til_toflu extends Activity {
         upphafsmynd.setText("");
     }
 
-    String _Radiochecked = "0";
+
 
     public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
 
         EditText nr1;
         nr1 = (EditText) findViewById(R.id.editText4);
@@ -82,8 +80,27 @@ public class Bua_til_toflu extends Activity {
         EditText nr12;
         nr12 = (EditText) findViewById(R.id.editText15);
 
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        String _Radiochecked = "0";
+
         // Check which radio button was clicked
         switch(view.getId()) {
+
+            case R.id.radioButton2:
+                if (checked) {
+                    _Radiochecked = "6";
+                    nr5.setVisibility(View.VISIBLE);
+                    nr6.setVisibility(View.VISIBLE);
+                    nr7.setVisibility(View.GONE);
+                    nr8.setVisibility(View.GONE);
+                    nr9.setVisibility(View.GONE);
+                    nr10.setVisibility(View.GONE);
+                    nr11.setVisibility(View.GONE);
+                    nr12.setVisibility(View.GONE);
+                    break;
+                }
             case R.id.radioButton:
                 if (checked) {
                     _Radiochecked = "4";
@@ -97,20 +114,14 @@ public class Bua_til_toflu extends Activity {
                     nr12.setVisibility(View.GONE);
                     break;
                 }
-            case R.id.radioButton2:
-                if (checked) {
-                    _Radiochecked = "6";
-                    nr7.setVisibility(View.GONE);
-                    nr8.setVisibility(View.GONE);
-                    nr9.setVisibility(View.GONE);
-                    nr10.setVisibility(View.GONE);
-                    nr11.setVisibility(View.GONE);
-                    nr12.setVisibility(View.GONE);
-                    break;
-                }
             case R.id.radioButton5:
                 if (checked) {
                     _Radiochecked = "9";
+                    nr5.setVisibility(View.VISIBLE);
+                    nr6.setVisibility(View.VISIBLE);
+                    nr7.setVisibility(View.VISIBLE);
+                    nr8.setVisibility(View.VISIBLE);
+                    nr9.setVisibility(View.VISIBLE);
                     nr10.setVisibility(View.GONE);
                     nr11.setVisibility(View.GONE);
                     nr12.setVisibility(View.GONE);
