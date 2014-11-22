@@ -1,9 +1,14 @@
 package com.example.seventeen.blissappid;
+import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by ivar on 05/11/14.
  * Lysing: DBHelper er til að saekja gogn ur gagnagrunni
@@ -13,17 +18,18 @@ public class DBHelper
     /**
      * new connection
      */
-    private static Connection conn = null;
+private static SQLiteDatabase db = null;
 
     /**
      * make the connection
      */
-    public DBHelper()
+    public DBHelper(Context context)
     {
         try
         {
-            Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:../../symbols.db");
+            ExternalDbOpenHelper opener = new ExternalDbOpenHelper(context,"symbols.db");
+            db = opener.getDb();
+
         } catch ( Exception e )
         {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
@@ -34,6 +40,7 @@ public class DBHelper
 
     public void close()
     {
+           //TODO: adjust this
         try {
             conn.close();
         } catch (SQLException e) {
@@ -53,14 +60,24 @@ public class DBHelper
     {
         try {
 
-
+        /*
             String command = "SELECT symbolname from tableSymbols where tablename=\"?\";";
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, tableName);
+            */
+            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName):
 
-            ResultSet rs=statement.executeQuery();
-            Array temp = rs.getArray("symbolname");
-            String[] output = (String[])temp.getArray();
+            int index=cursor.getColumnIndex("symbolname");
+            ArrayList list = new ArrayList<String>();
+
+            while(!cursor.isAfterLast())
+            {
+                list.add(cursor.getInt(index));
+                cursor.moveToNext();
+            }
+
+            String[] output = list.toArray();
+
             return output;
 
         }
@@ -86,12 +103,14 @@ public class DBHelper
 
         try
         {
+            /*
             String command = "SELECT image from symbol where name=\"?\";";
+
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
+            */
+            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",symbolName);
 
-            ResultSet cursor = statement.executeQuery();
-            cursor.first();
 
 
             Blob blobImage = cursor.getBlob(0);
