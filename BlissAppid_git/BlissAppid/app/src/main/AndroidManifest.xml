@@ -35,7 +35,8 @@
         </activity>
         <activity
             android:name=".Notkunarskra"
-            android:label="@string/title_activity_notkunarskra" >
+            android:label="@string/title_activity_notkunarskra"
+            android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
             android:name=".bio"
