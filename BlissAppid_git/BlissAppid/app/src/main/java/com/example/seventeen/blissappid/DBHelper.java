@@ -109,7 +109,7 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
             */
-            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",symbolName);
+            Cursor cursor = db.query("Select",new String[]{"symbol"},"_id=\"?\"",symbolName);
 
 
 
