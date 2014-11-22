@@ -31,6 +31,15 @@ public class DBHelper
         }
     }
 
+    public void close()
+    {
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * Usage:x=DBHelper.getSymbols(tableName)
      * Before: tableName is a name of a table in the tables database
