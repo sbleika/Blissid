@@ -30,7 +30,8 @@
         </activity>
         <activity
             android:name=".Bua_til_toflu"
-            android:label="@string/title_activity_bua_til_toflu" >
+            android:label="@string/title_activity_bua_til_toflu"
+            android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
             android:name=".Notkunarskra"
@@ -47,26 +48,6 @@
         <activity
             android:name=".tafla11"
             android:label="@string/title_activity_tafla11" >
-        </activity>
-        <activity
-            android:name=".tafla12"
-            android:label="@string/title_activity_tafla12" >
-        </activity>
-        <activity
-            android:name=".tafla13"
-            android:label="@string/title_activity_tafla13" >
-        </activity>
-        <activity
-            android:name=".tafla14"
-            android:label="@string/title_activity_tafla14" >
-        </activity>
-        <activity
-            android:name=".tafla16"
-            android:label="@string/title_activity_tafla16" >
-        </activity>
-        <activity
-            android:name=".tafla15"
-            android:label="@string/title_activity_tafla15" >
         </activity>
     </application>
 
