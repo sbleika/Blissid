@@ -5,9 +5,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created by ivar on 05/11/14.
@@ -42,8 +41,8 @@ private static SQLiteDatabase db = null;
     {
            //TODO: adjust this
         try {
-            conn.close();
-        } catch (SQLException e) {
+            db.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -65,7 +64,8 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, tableName);
             */
-            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName):
+            //String[] selectionColumns =  {"symbolname"};
+            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",new String[]{tableName},null,null,null);
 
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
@@ -76,7 +76,7 @@ private static SQLiteDatabase db = null;
                 cursor.moveToNext();
             }
 
-            String[] output = list.toArray();
+            String[] output = (String[]) list.toArray();
 
             return output;
 
@@ -109,14 +109,14 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
             */
-            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",symbolName);
+            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",new String[]{symbolName},null,null,null);
 
 
 
-            Blob blobImage = cursor.getBlob(0);
+            byteImage = cursor.getBlob(0);
 
-            int blobLength = (int) blobImage.length();
-            byteImage = blobImage.getBytes(1,blobLength);
+           // int blobLength = (int) blobImage.length();
+           // byteImage = blobImage.getBytes(1,blobLength);
 
             Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
             return image;

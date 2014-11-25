@@ -2,6 +2,8 @@
 adstodarmaður
 akvardandi(með)
 
+../BlissAppid_git/BlissSymbols/reikna_1.bmp
+../BlissAppid_git/BlissSymbols/manudur.bmp
 hlutlægt no..bmp
 sogn i nutid.bmp
 franskar kartöflur.bmp

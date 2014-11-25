@@ -1905,7 +1905,6 @@
 ../BlissAppid_git/BlissSymbols/manneskja_stijandi.bmp
 ../BlissAppid_git/BlissSymbols/manneskja_veik.bmp
 ../BlissAppid_git/BlissSymbols/manudagur.bmp
-../BlissAppid_git/BlissSymbols/manudur.bmp
 ../BlissAppid_git/BlissSymbols/margfalda.bmp
 ../BlissAppid_git/BlissSymbols/margfoldun.bmp
 ../BlissAppid_git/BlissSymbols/margir.bmp
@@ -2376,7 +2375,6 @@
 ../BlissAppid_git/BlissSymbols/reidur.bmp
 ../BlissAppid_git/BlissSymbols/reikingur.bmp
 ../BlissAppid_git/BlissSymbols/reikna.bmp
-../BlissAppid_git/BlissSymbols/reikna_1.bmp
 ../BlissAppid_git/BlissSymbols/reikna_2.bmp
 ../BlissAppid_git/BlissSymbols/reiknivel.bmp
 ../BlissAppid_git/BlissSymbols/rekast_a.bmp

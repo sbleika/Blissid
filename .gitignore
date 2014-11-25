@@ -42,7 +42,11 @@ BlissAppid_git/Blisstáknin/Thumbs.db
 .idea/workspace.xml
 BlissAppid_git/Blisstáknin/Blizztákn/h-ö/Thumbs.db
 *.iml
-BlissAppid_git/BlissAppid/app/app.iml
+mport android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+BlissAppid_git/BlissAppid/app/src/main/assets
+
 *.db
 *.db
 gagnagrunnsvinnsla/symbols.db
+**/*.db
