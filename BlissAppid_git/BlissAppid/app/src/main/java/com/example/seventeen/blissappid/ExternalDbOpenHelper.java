@@ -1,5 +1,6 @@
 package com.example.seventeen.blissappid;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,7 +54,7 @@ public class ExternalDbOpenHelper extends SQLiteOpenHelper {
 
     //Performing a database existence check
     private boolean checkDataBase() {
-        SQLiteDatabase checkDb = null;
+       /* SQLiteDatabase checkDb = null;
         try {
             String path = DB_PATH + DB_NAME;
             checkDb = SQLiteDatabase.openDatabase(path, null,
@@ -67,6 +68,9 @@ public class ExternalDbOpenHelper extends SQLiteOpenHelper {
             checkDb.close();
         }
         return checkDb != null;
+        */
+        File dbFile = context.getDatabasePath(DB_NAME);
+        return dbFile.exists();
     }
 
     //Method for copying the database
