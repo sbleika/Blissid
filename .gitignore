@@ -49,3 +49,4 @@ BlissAppid_git/BlissAppid/app/src/main/assets
 *.db
 *.db
 gagnagrunnsvinnsla/symbols.db
+**/*.db
