@@ -33,9 +33,9 @@ public class Kallari extends Activity {
     public static void maketablefun(String upphafstakn, int size, String[] myndir) {
         // make new imagebutton...
 
-        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+        //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
 
-        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+        //takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
 
     }
 
