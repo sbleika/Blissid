@@ -109,10 +109,12 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
             */
+            System.out.println("before cursor def")
             Cursor cursor = db.query("symbols",new String[]{"image"},"_id=\"?\"",new String[]{symbolName},null,null,null);
-
+            System.out.println("after cursor def")
 
             System.out.println(cursor.getColumnNames());
+            System.out.println("after cursor print")
             byteImage = cursor.getBlob(0);
 
            // int blobLength = (int) blobImage.length();
