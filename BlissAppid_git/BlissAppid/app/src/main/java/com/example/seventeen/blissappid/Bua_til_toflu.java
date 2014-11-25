@@ -221,7 +221,7 @@ public class Bua_til_toflu extends Activity {
             EditText upphafsmynd;
             upphafsmynd = (EditText)findViewById(R.id.textView9);
             String txt9=upphafsmynd.getText().toString();
-            MakeTable.maketablefun(txt9);
+            //MakeTable.maketablefun(txt9);
             Tbutton();
         }
     };

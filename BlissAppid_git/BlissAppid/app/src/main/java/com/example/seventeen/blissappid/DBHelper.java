@@ -131,7 +131,4 @@ private static SQLiteDatabase db = null;
         }
 
     }
-
-
-
 }
