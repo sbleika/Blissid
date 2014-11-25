@@ -65,7 +65,7 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, tableName);
             */
-            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName):
+            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName);
 
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
@@ -76,7 +76,7 @@ private static SQLiteDatabase db = null;
                 cursor.moveToNext();
             }
 
-            String[] output = list.toArray();
+            String[] output = (String[]) list.toArray();
 
             return output;
 
@@ -113,10 +113,10 @@ private static SQLiteDatabase db = null;
 
 
 
-            Blob blobImage = cursor.getBlob(0);
+            byteImage = cursor.getBlob(0);
 
-            int blobLength = (int) blobImage.length();
-            byteImage = blobImage.getBytes(1,blobLength);
+           // int blobLength = (int) blobImage.length();
+           // byteImage = blobImage.getBytes(1,blobLength);
 
             Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
             return image;
