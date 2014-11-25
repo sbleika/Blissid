@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 /**
  * Hofundur: Rúnar Þór
@@ -11,13 +12,32 @@ import android.view.MenuItem;
  * Lysing:
  */
 public class Kallari extends Activity {
-
+    DBHelper DB = new DBHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kallari);
+
+
     }
 
+    /**
+     * Fall sem býr til nýja töflu
+     * @param upphafstakn mynd fyrir töfluna
+     * @param size fjöldi mynda
+     * @param myndir array fyrir oll taknin
+     */
+    ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
+    ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+
+    public static void maketablefun(String upphafstakn, int size, String[] myndir) {
+        // make new imagebutton...
+
+        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+
+        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+
+    }
 
     /**
      * Inflate the menu; this adds items to the action bar if it is present.

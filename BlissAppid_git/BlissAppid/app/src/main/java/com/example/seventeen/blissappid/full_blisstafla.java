@@ -123,6 +123,49 @@ public class full_blisstafla extends Activity {
     }
 
 
+
+    // onclick fyrir töflur
+    View.OnClickListener gototafla11ClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+            // todo byrta mynd a lesstiku
+            t11();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla11
+     */
+    private void t11(){
+        startActivity(new Intent(this, tafla11.class));
+    }
+
+
+
+    View.OnClickListener gototilbakaClickListener = new View.OnClickListener() {
+        /**
+         * ef smellt er a tilbaka takkan er kallad a fallid()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+
+            tilbaka();
+        }
+    };
+
+    /**
+     * opnar nyja gluggan nothafi
+     */
+    private void tilbaka(){
+        startActivity(new Intent(this, nothafi1.class));}
+
+
+
     /**
      * Inflate the menu; this adds items to the action bar if it is present.
      * @param menu menu
@@ -152,45 +195,4 @@ public class full_blisstafla extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-        // onclick fyrir töflur
-        View.OnClickListener gototafla11ClickListener = new View.OnClickListener() {
-            /**
-             * ef smellt er a bio takkan er kallad a fallid bio()
-             * @param v view
-             */
-            @Override
-            public void onClick(View v) {
-
-                t11();
-            }
-        };
-
-        /**
-         * opnar nyja gluggan tafla11
-         */
-        private void t11(){
-            startActivity(new Intent(this, tafla11.class));
-        }
-
-
-
-        View.OnClickListener gototilbakaClickListener = new View.OnClickListener() {
-            /**
-             * ef smellt er a tilbaka takkan er kallad a fallid()
-             * @param v view
-             */
-            @Override
-            public void onClick(View v) {
-
-                tilbaka();
-            }
-        };
-
-        /**
-         * opnar nyja gluggan nothafi
-         */
-        private void tilbaka(){
-            startActivity(new Intent(this, nothafi1.class));}
-
 }

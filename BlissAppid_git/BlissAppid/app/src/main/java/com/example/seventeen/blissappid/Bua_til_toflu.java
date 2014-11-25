@@ -44,6 +44,8 @@ public class Bua_til_toflu extends Activity {
 
     }
 
+    int _Radiochecked = 0;
+
     /**
      *
      */
@@ -98,22 +100,22 @@ public class Bua_til_toflu extends Activity {
         switch(view.getId()) {
             case R.id.radioButton:
                 if (checked) {
-                    //setVisiblefor(4);
+                    setVisiblefor(4);
                     break;
                 }
             case R.id.radioButton2:
                 if (checked) {
-                    //setVisiblefor(6);
+                    setVisiblefor(6);
                     break;
                 }
             case R.id.radioButton5:
                 if (checked) {
-                    //setVisiblefor(9);
+                    setVisiblefor(9);
                     break;
                 }
             case R.id.radioButton6:
                 if (checked) {
-                    //setVisiblefor(12);
+                    setVisiblefor(12);
                     break;
                 }
         }
@@ -123,12 +125,11 @@ public class Bua_til_toflu extends Activity {
      *
      * @param NumOfItems
      */
-    /*
+
+
+
     public void setVisiblefor(int NumOfItems){
-        String _Radiochecked = "0";
-
-        EditText nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
-
+        EditText  nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
         nr5 = (EditText) findViewById(R.id.editText9);
         nr6 = (EditText) findViewById(R.id.editText8);
         nr7 = (EditText) findViewById(R.id.editText10);
@@ -138,8 +139,9 @@ public class Bua_til_toflu extends Activity {
         nr11 = (EditText) findViewById(R.id.editText14);
         nr12 = (EditText) findViewById(R.id.editText15);
 
+
         if(NumOfItems == 4){
-            _Radiochecked = "4";
+            _Radiochecked = 4;
             nr5.setVisibility(View.GONE);
             nr6.setVisibility(View.GONE);
             nr7.setVisibility(View.GONE);
@@ -149,8 +151,9 @@ public class Bua_til_toflu extends Activity {
             nr11.setVisibility(View.GONE);
             nr12.setVisibility(View.GONE);
         }
+
         if(NumOfItems == 6){
-            _Radiochecked = "6";
+            _Radiochecked = 6;
             nr5.setVisibility(View.VISIBLE);
             nr6.setVisibility(View.VISIBLE);
             nr7.setVisibility(View.GONE);
@@ -161,7 +164,7 @@ public class Bua_til_toflu extends Activity {
             nr12.setVisibility(View.GONE);
         }
         if(NumOfItems == 9){
-            _Radiochecked = "9";
+            _Radiochecked = 9;
             nr5.setVisibility(View.VISIBLE);
             nr6.setVisibility(View.VISIBLE);
             nr7.setVisibility(View.VISIBLE);
@@ -172,7 +175,7 @@ public class Bua_til_toflu extends Activity {
             nr12.setVisibility(View.GONE);
         }
         if(NumOfItems == 12){
-            _Radiochecked = "12";
+            _Radiochecked = 12;
             nr5.setVisibility(View.VISIBLE);
             nr6.setVisibility(View.VISIBLE);
             nr7.setVisibility(View.VISIBLE);
@@ -183,7 +186,7 @@ public class Bua_til_toflu extends Activity {
             nr12.setVisibility(View.VISIBLE);
         }
     }
-*/
+
     /**
      * Ef smellt er a Búa til töflu takkan er kallad a fallid Tbutton() og maketable.maketablefun
      */
@@ -194,10 +197,40 @@ public class Bua_til_toflu extends Activity {
          */
         @Override
         public void onClick(View v) {
+            EditText  nr1, nr2, nr3, nr4, nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
+            nr1 = (EditText) findViewById(R.id.editText4);
+            nr2 = (EditText) findViewById(R.id.editText5);
+            nr3 = (EditText) findViewById(R.id.editText7);
+            nr4 = (EditText) findViewById(R.id.editText6);
+            nr5 = (EditText) findViewById(R.id.editText9);
+            nr6 = (EditText) findViewById(R.id.editText8);
+            nr7 = (EditText) findViewById(R.id.editText10);
+            nr8 = (EditText) findViewById(R.id.editText11);
+            nr9 = (EditText) findViewById(R.id.editText12);
+            nr10 = (EditText) findViewById(R.id.editText13);
+            nr11 = (EditText) findViewById(R.id.editText14);
+            nr12 = (EditText) findViewById(R.id.editText15);
+
+            String[] myndir = new String[12];
+
+            myndir[0]= nr1.getText().toString();
+            myndir[1]= nr2.getText().toString();
+            myndir[2]= nr3.getText().toString();
+            myndir[3]= nr4.getText().toString();
+            myndir[4]= nr5.getText().toString();
+            myndir[5]= nr6.getText().toString();
+            myndir[6]= nr7.getText().toString();
+            myndir[7]= nr8.getText().toString();
+            myndir[8]= nr9.getText().toString();
+            myndir[9]= nr10.getText().toString();
+            myndir[10]= nr11.getText().toString();
+            myndir[11]= nr12.getText().toString();
+
             EditText upphafsmynd;
             upphafsmynd = (EditText)findViewById(R.id.textView9);
-            String txt9=upphafsmynd.getText().toString();
-            //MakeTable.maketablefun(txt9);
+            String txt9 = upphafsmynd.getText().toString();
+
+            Kallari.maketablefun(txt9, _Radiochecked, myndir);
             Tbutton();
         }
     };
