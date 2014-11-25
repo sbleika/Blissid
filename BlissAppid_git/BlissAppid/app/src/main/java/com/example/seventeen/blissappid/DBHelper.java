@@ -112,7 +112,7 @@ private static SQLiteDatabase db = null;
             Cursor cursor = db.query("symbols",new String[]{"image"},"_id=\"?\"",new String[]{symbolName},null,null,null);
 
 
-
+            System.out.println(cursor.getColumnNames());
             byteImage = cursor.getBlob(0);
 
            // int blobLength = (int) blobImage.length();
