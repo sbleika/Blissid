@@ -15,5 +15,6 @@ public class MakeTable {
      */
     public static void maketablefun(String upphafstakn, int size, String[] myndir) {
         // make new imagebutton...
+
     }
 }
