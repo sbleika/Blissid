@@ -110,7 +110,7 @@ private static SQLiteDatabase db = null;
             statement.setString(1, symbolName);
             */
             System.err.println("before cursor def");
-            Cursor cursor = db.query("symbols",new String[]{"image"},"_id=\"?\"",new String[]{symbolName},null,null,null,null);
+            Cursor cursor = db.query("symbols",/*new String[]{"image"}*/ null,"_id=\"?\"",new String[]{symbolName},null,null,null,null);
             System.err.println("after cursor def");
 
             System.err.println(cursor.getColumnNames());
