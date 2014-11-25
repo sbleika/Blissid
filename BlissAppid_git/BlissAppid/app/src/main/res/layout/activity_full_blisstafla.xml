@@ -17,7 +17,8 @@
             android:id="@+id/imageView"
             android:src="@drawable/lesstika"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            />
         </LinearLayout>
 
 
@@ -41,7 +42,8 @@
                 android:src="@drawable/t11"
                 android:scaleType="fitXY"
                 android:maxWidth="200dp"
-                android:onClick="gototafla11ClickListener" />
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -57,7 +59,8 @@
                 android:src="@drawable/t12"
                 android:scaleType="fitXY"
                  android:maxHeight="200dp"
-                 android:onClick="gototafla11ClickListener"/>
+                 android:onClick="gototafla11ClickListener"
+                 />
 
         </LinearLayout>
 
@@ -73,7 +76,8 @@
                 android:id="@+id/t13"
                 android:src="@drawable/t13"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                 />
 
             </LinearLayout>
 
@@ -89,7 +93,8 @@
                 android:src="@drawable/t14"
                 android:scaleType="fitXY"
                 android:layout_alignParentTop="true"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -106,7 +111,8 @@
                 android:src="@drawable/t15"
                 android:scaleType="fitXY"
                 android:layout_weight="0.24"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -123,7 +129,8 @@
                 android:src="@drawable/t16"
                 android:scaleType="fitXY"
                 android:layout_weight="0.38"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -145,7 +152,8 @@
                 android:id="@+id/t21"
                 android:src="@drawable/t21"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -160,7 +168,8 @@
                 android:id="@+id/t22"
                 android:src="@drawable/t22"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -175,7 +184,8 @@
                 android:id="@+id/t23"
                 android:src="@drawable/t23"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -190,7 +200,8 @@
                 android:id="@+id/t24"
                 android:src="@drawable/t24"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -205,7 +216,8 @@
                 android:id="@+id/t25"
                 android:src="@drawable/t25"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -220,7 +232,8 @@
                 android:id="@+id/t26"
                 android:src="@drawable/t26"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
             </LinearLayout>
 
@@ -242,7 +255,8 @@
                 android:id="@+id/t31"
                 android:src="@drawable/t31"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -257,7 +271,8 @@
                 android:id="@+id/t32"
                 android:src="@drawable/t32"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -272,7 +287,8 @@
                 android:id="@+id/t33"
                 android:src="@drawable/t33"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -287,7 +303,8 @@
                 android:id="@+id/t34"
                 android:src="@drawable/t34"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -302,7 +319,8 @@
                 android:id="@+id/t35"
                 android:src="@drawable/t35"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -317,7 +335,8 @@
                 android:id="@+id/t36"
                 android:src="@drawable/t36"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -339,7 +358,8 @@
                 android:id="@+id/t41"
                 android:src="@drawable/t41"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -354,7 +374,8 @@
                 android:id="@+id/t42"
                 android:src="@drawable/t42"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -369,7 +390,8 @@
                 android:id="@+id/t43"
                 android:src="@drawable/t43"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -384,7 +406,8 @@
                 android:id="@+id/t44"
                 android:src="@drawable/t44"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -399,7 +422,8 @@
                 android:id="@+id/t45"
                 android:src="@drawable/t45"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -414,7 +438,8 @@
                 android:id="@+id/t46"
                 android:src="@drawable/t46"
                 android:scaleType="fitXY"
-                android:onClick="gototafla11ClickListener"/>
+                android:onClick="gototafla11ClickListener"
+                />
 
         </LinearLayout>
 
@@ -442,7 +467,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/tilbaka"
         android:layout_gravity="right"
-        android:onClick="gototilbakaClickListener"/>
+        android:onClick="gototilbakaClickListener"
+        />
 
 
 </LinearLayout>
