@@ -30,7 +30,7 @@ public class ExternalDbOpenHelper extends SQLiteOpenHelper {
         this.context = context;
         //Write a full path to the databases of your application
         String packageName = context.getPackageName();
-        DB_PATH = String.format("//data//data//%s//databases//", packageName);
+        DB_PATH = String.format("//data//data//%s//", packageName);
         DB_NAME = databaseName;
         openDataBase();
     }

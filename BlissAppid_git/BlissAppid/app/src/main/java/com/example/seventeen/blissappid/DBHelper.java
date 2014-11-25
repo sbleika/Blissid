@@ -39,7 +39,7 @@ private static SQLiteDatabase db = null;
 
     public void close()
     {
-           //TODO: adjust this
+
         try {
             db.close();
         } catch (Exception e) {
