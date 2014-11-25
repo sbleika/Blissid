@@ -110,20 +110,23 @@ private static SQLiteDatabase db = null;
             statement.setString(1, symbolName);
             */
             System.err.println("before cursor def");
-            Cursor cursor = db.query("symbols",new String[]{"image"},"_id=\""+symbolName+"\"",null/*new String[]{symbolName}*/,null,null,null,null);
+            Cursor cursor = db.query("symbols",new String[]{"_id"},"_id=\""+symbolName+"\"",null/*new String[]{symbolName}*/,null,null,null,null);
             System.err.println("after cursor def");
 
             System.err.println(cursor.getColumnNames());
             System.err.println("after cursor print");
-            byteImage = cursor.getBlob(0);
+            //int index = cursor.getColumnIndexOrThrow("image");
+            //System.err.println(index);
+ //           byteImage = cursor.getBlob(index);
+            String name = cursor.getString(0);
 
-            System.err.println("after byteImage def")
+            System.err.println("after byteImage def");
 
            // int blobLength = (int) blobImage.length();
            // byteImage = blobImage.getBytes(1,blobLength);
-
-            Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
-            return image;
+return null;
+   //         Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
+            //return image;
 
         }
         catch(Exception e)
