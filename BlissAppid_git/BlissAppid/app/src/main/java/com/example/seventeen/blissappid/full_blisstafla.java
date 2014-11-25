@@ -15,7 +15,7 @@ public class full_blisstafla extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_blisstafla);
-/*
+
         //takkar fyrir röð 1
         ImageButton t11;
         t11 = (ImageButton) findViewById(R.id.t11);
@@ -120,8 +120,6 @@ public class full_blisstafla extends Activity {
         ImageButton tilbaka;
         tilbaka = (ImageButton) findViewById(R.id.tilbaka);
         tilbaka.setOnClickListener(gototilbakaClickListener);
-
-*/
     }
 
 
