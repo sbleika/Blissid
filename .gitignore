@@ -50,3 +50,5 @@ BlissAppid_git/BlissAppid/app/src/main/assets
 *.db
 gagnagrunnsvinnsla/symbols.db
 **/*.db
+*.db
+gagnagrunnsvinnsla/symbols.db
