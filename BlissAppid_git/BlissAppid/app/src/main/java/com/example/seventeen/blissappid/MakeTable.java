@@ -1,12 +1,19 @@
 package com.example.seventeen.blissappid;
 
+
 /**
- * Created by EOS on 11/18/2014.
+ * Hofundur: Egill Orn Sigthorsson
+ * Dagsetning: 18.11.2014
+ * Lysing: Klasi til að búa til nýja töflu
  */
 public class MakeTable {
-
-    public static boolean maketablefun(String upphafstakn) {
+    /**
+     * Fall sem býr til nýja töflu
+     * @param upphafstakn mynd fyrir töfluna
+     * @param size fjöldi mynda
+     * @param myndir array fyrir oll taknin
+     */
+    public static void maketablefun(String upphafstakn, int size, String[] myndir) {
         // make new imagebutton...
-        return true;
     }
 }

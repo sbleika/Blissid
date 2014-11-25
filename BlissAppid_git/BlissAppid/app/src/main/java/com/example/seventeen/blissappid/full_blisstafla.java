@@ -15,7 +15,7 @@ public class full_blisstafla extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_blisstafla);
-
+/*
         //takkar fyrir röð 1
         ImageButton t11;
         t11 = (ImageButton) findViewById(R.id.t11);
@@ -117,27 +117,39 @@ public class full_blisstafla extends Activity {
         t46.setOnClickListener(gototafla11ClickListener);
 
 
-
         ImageButton tilbaka;
         tilbaka = (ImageButton) findViewById(R.id.tilbaka);
         tilbaka.setOnClickListener(gototilbakaClickListener);
+
+*/
     }
 
 
+    /**
+     * Inflate the menu; this adds items to the action bar if it is present.
+     * @param menu menu
+     * @return true
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.full_blisstafla, menu);
+
+        getMenuInflater().inflate(R.menu.bua_til_toflu, menu);
         return true;
+
     }
 
+    /**
+     * Handle action bar item clicks here. The action bar will
+     * automatically handle clicks on the Home/Up button, so long
+     * as you specify a parent activity in AndroidManifest.xml.
+     * @param item menuitem
+     * @return super.onOptionsItemSelected(item);
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if(id == R.id.action_settings) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -178,7 +190,7 @@ public class full_blisstafla extends Activity {
         };
 
         /**
-         * opnar nyja gluggan tafla16
+         * opnar nyja gluggan nothafi
          */
         private void tilbaka(){
             startActivity(new Intent(this, nothafi1.class));}
