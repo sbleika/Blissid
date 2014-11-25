@@ -117,6 +117,8 @@ private static SQLiteDatabase db = null;
             System.err.println("after cursor print");
             byteImage = cursor.getBlob(0);
 
+            System.err.println("after byteImage def")
+
            // int blobLength = (int) blobImage.length();
            // byteImage = blobImage.getBytes(1,blobLength);
 
@@ -126,7 +128,7 @@ private static SQLiteDatabase db = null;
         }
         catch(Exception e)
         {
-            System.out.println("sqlerror in DBHelper.getSymbolImage"+e.getMessage());
+            System.out.println("sqlerror in DBHelper.getSymbolImage :"+e.getMessage());
             System.err.println("failed getsymbolImage");
             String[] empty = new String[0];
             return null;
