@@ -119,7 +119,7 @@ private static SQLiteDatabase db = null;
             System.err.println(index);
             byteImage = cursor.getBlob(index);
 
-            System.err.println("after byteImage def")
+            System.err.println("after byteImage def");
 
            // int blobLength = (int) blobImage.length();
            // byteImage = blobImage.getBytes(1,blobLength);
