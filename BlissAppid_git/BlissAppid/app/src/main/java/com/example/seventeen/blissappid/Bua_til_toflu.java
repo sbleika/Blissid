@@ -74,31 +74,6 @@ public class Bua_til_toflu extends Activity {
             e.printStackTrace();
         }
 
-        /*try {
-            //String cardPath = String.valueOf(Environment.getExternalStorageDirectory());
-            AssetManager am = getAssets();
-            InputStream is = am.open("nofn1.txt");
-            InputStreamReader inputStreamReader = new InputStreamReader(is);
-            BufferedReader r = new BufferedReader(inputStreamReader);
-            //BufferedReader r = new BufferedReader(new FileReader(cardPath + "/nofn1.txt"));
-            StringBuilder total = new StringBuilder();
-            String line;
-            try {
-                while((line = r.readLine()) != null) {
-                    total.append(line);
-                    total.append("\n");
-                }
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-            taknalist.setText(total.toString());
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
 
     }
     /**
@@ -123,22 +98,22 @@ public class Bua_til_toflu extends Activity {
         switch(view.getId()) {
             case R.id.radioButton:
                 if (checked) {
-                    setVisiblefor(4);
+                    //setVisiblefor(4);
                     break;
                 }
             case R.id.radioButton2:
                 if (checked) {
-                    setVisiblefor(6);
+                    //setVisiblefor(6);
                     break;
                 }
             case R.id.radioButton5:
                 if (checked) {
-                    setVisiblefor(9);
+                    //setVisiblefor(9);
                     break;
                 }
             case R.id.radioButton6:
                 if (checked) {
-                    setVisiblefor(12);
+                    //setVisiblefor(12);
                     break;
                 }
         }
@@ -148,6 +123,7 @@ public class Bua_til_toflu extends Activity {
      *
      * @param NumOfItems
      */
+    /*
     public void setVisiblefor(int NumOfItems){
         String _Radiochecked = "0";
 
@@ -207,7 +183,7 @@ public class Bua_til_toflu extends Activity {
             nr12.setVisibility(View.VISIBLE);
         }
     }
-
+*/
     /**
      * Ef smellt er a Búa til töflu takkan er kallad a fallid Tbutton() og maketable.maketablefun
      */
@@ -235,17 +211,17 @@ public class Bua_til_toflu extends Activity {
 
 
     /**
-     * Inflate the menu; this adds items to the action bar if it is present.
-     * @param menu menu
-     * @return true
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+ * Inflate the menu; this adds items to the action bar if it is present.
+ * @param menu menu
+ * @return true
+ */
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.bua_til_toflu, menu);
-        return true;
+    getMenuInflater().inflate(R.menu.bua_til_toflu, menu);
+    return true;
 
-    }
+}
 
     /**
      * Handle action bar item clicks here. The action bar will
