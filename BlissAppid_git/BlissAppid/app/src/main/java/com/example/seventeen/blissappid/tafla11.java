@@ -8,14 +8,13 @@ import android.widget.ImageButton;
 
 
 public class tafla11 extends Activity {
-    DBHelper DB = new DBHelper(this);
+    //DBHelper DB = new DBHelper(this);
     static String _TableToUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kallari);
-        SetImage();
-
+        //SetImage();
     }
     public void SetImage(){
         String[] myndir = new String[12];
