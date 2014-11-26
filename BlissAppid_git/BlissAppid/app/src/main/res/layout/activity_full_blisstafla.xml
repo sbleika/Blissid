@@ -9,34 +9,93 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="120dp">
 
         <ImageButton
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:src="@drawable/ja"
             android:id="@+id/lesstika1"
-            android:layout_gravity="bottom"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:scaleType="fitXY" />
 
         <ImageButton
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:src="@drawable/ja"
             android:id="@+id/lesstika2"
-            android:visibility="gone"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_gravity="bottom"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:layout_gravity="center" />
+
         <ImageButton
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@drawable/ja"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/nei"
             android:id="@+id/lesstika3"
-            android:layout_gravity="bottom"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/nammi"
+            android:id="@+id/lesstika4"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ja"
+            android:id="@+id/lesstika5"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ja"
+            android:id="@+id/lesstika6"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ja"
+            android:id="@+id/lesstika7"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ja"
+            android:id="@+id/lesstika8"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ja"
+            android:id="@+id/lesstika9"
+            android:layout_gravity="center"
             android:scaleType="fitXY"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
@@ -57,13 +116,12 @@
             android:weightSum="1">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t11"
                 android:src="@drawable/t11"
                 android:scaleType="fitXY"
-                android:maxWidth="200dp"
-                />
+                android:maxWidth="200dp" />
 
         </LinearLayout>
 
@@ -73,29 +131,28 @@
             android:layout_height="match_parent">
 
              <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t12"
                 android:src="@drawable/t12"
                 android:scaleType="fitXY"
-                 android:maxHeight="200dp"
-                 />
+                 android:maxHeight="200dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="119dp"
-            android:layout_weight="0.02">
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:layout_gravity="top">
 
              <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t13"
                 android:src="@drawable/t13"
-                android:scaleType="fitXY"
-                 />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
@@ -105,13 +162,12 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t14"
                 android:src="@drawable/t14"
                 android:scaleType="fitXY"
-                android:layout_alignParentTop="true"
-                />
+                android:layout_alignParentTop="true" />
 
             </LinearLayout>
 
@@ -122,13 +178,12 @@
             android:weightSum="1">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t15"
                 android:src="@drawable/t15"
                 android:scaleType="fitXY"
-                android:layout_weight="0.24"
-                />
+                android:layout_weight="0.24" />
 
             </LinearLayout>
 
@@ -139,13 +194,12 @@
             android:weightSum="1">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t16"
                 android:src="@drawable/t16"
                 android:scaleType="fitXY"
-                android:layout_weight="0.38"
-                />
+                android:layout_weight="0.38" />
 
             </LinearLayout>
 
@@ -162,72 +216,67 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="213dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t21"
                 android:src="@drawable/t21"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t22"
                 android:src="@drawable/t22"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t23"
                 android:src="@drawable/t23"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t24"
                 android:src="@drawable/t24"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t25"
                 android:src="@drawable/t25"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
@@ -237,12 +286,11 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t26"
                 android:src="@drawable/t26"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
             </LinearLayout>
 
@@ -255,76 +303,15 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="210dp"
-            android:layout_height="100dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="213dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t31"
                 android:src="@drawable/t31"
-                android:scaleType="fitXY"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
-
-            <ImageButton
-                android:layout_width="212dp"
-                android:layout_height="120dp"
-                android:id="@+id/t32"
-                android:src="@drawable/t32"
-                android:scaleType="fitXY"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
-
-            <ImageButton
-                android:layout_width="212dp"
-                android:layout_height="120dp"
-                android:id="@+id/t33"
-                android:src="@drawable/t33"
-                android:scaleType="fitXY"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
-
-            <ImageButton
-                android:layout_width="212dp"
-                android:layout_height="120dp"
-                android:id="@+id/t34"
-                android:src="@drawable/t34"
-                android:scaleType="fitXY"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
-
-            <ImageButton
-                android:layout_width="212dp"
-                android:layout_height="120dp"
-                android:id="@+id/t35"
-                android:src="@drawable/t35"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
@@ -334,12 +321,67 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
+                android:layout_height="120dp"
+                android:id="@+id/t32"
+                android:src="@drawable/t32"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="208dp"
+                android:layout_height="120dp"
+                android:id="@+id/t33"
+                android:src="@drawable/t33"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="208dp"
+                android:layout_height="120dp"
+                android:id="@+id/t34"
+                android:src="@drawable/t34"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="208dp"
+                android:layout_height="120dp"
+                android:id="@+id/t35"
+                android:src="@drawable/t35"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t36"
                 android:src="@drawable/t36"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
@@ -353,75 +395,60 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="fill_parent"
+            android:layout_gravity="right">
 
             <ImageButton
-                android:layout_width="213dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t41"
                 android:src="@drawable/t41"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t42"
                 android:src="@drawable/t42"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t43"
                 android:src="@drawable/t43"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t44"
                 android:src="@drawable/t44"
-                android:scaleType="fitXY"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="212dp"
-            android:layout_height="120dp">
-
-            <ImageButton
-                android:layout_width="212dp"
-                android:layout_height="120dp"
-                android:id="@+id/t45"
-                android:src="@drawable/t45"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
@@ -431,12 +458,25 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="212dp"
+                android:layout_width="208dp"
+                android:layout_height="120dp"
+                android:id="@+id/t45"
+                android:src="@drawable/t45"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="208dp"
                 android:layout_height="120dp"
                 android:id="@+id/t46"
                 android:src="@drawable/t46"
-                android:scaleType="fitXY"
-                />
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
@@ -449,7 +489,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tilbaka"
-        android:layout_gravity="right"
+        android:layout_gravity="bottom|right"
         />
 
 
