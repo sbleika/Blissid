@@ -1,7 +1,7 @@
 
 CREATE TABLE bigtable
 ( 
-    tablename TEXT,
+    _id TEXT,
     image BLOB,
     symbolname TEXT
 );
