@@ -106,7 +106,7 @@ private static SQLiteDatabase db = null;
             //String[] selectionColumns =  {"symbolname"};
             Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\"?\";",new String[]{tableName},null,null,null);
 
-            int index=cursor.getColumnIndex("symbolname");
+            int index=cursor.getColumnIndexOrThrow("symbolname");
             ArrayList list = new ArrayList<String>();
 
             cursor.moveToFirst();
@@ -125,7 +125,7 @@ private static SQLiteDatabase db = null;
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
-            System.err.println("failed getsymbols");
+            System.err.println("failed getbigtablesymbols");
             String[] empty = new String[0];
             return empty;
         }
@@ -169,7 +169,7 @@ private static SQLiteDatabase db = null;
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbolImage :"+e.getMessage());
-            System.err.println("failed getsymbolImage");
+            System.err.println("failed getbigtablesymbolImage");
             String[] empty = new String[0];
             return null;
         }
