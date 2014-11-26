@@ -122,14 +122,19 @@ public class tafla11 extends Activity {
      * opnar nyja gluggan tafla11
      */
     private void t11(View v){
-        startActivity(new Intent(this, full_blisstafla.class));
-        ImageButton iv = (ImageButton)v;
-        int id = iv.getId();
-        String idStr = getResources().getResourceName(id);
-        full_blisstafla._lesmynd[_LesMyndNum] = "sorg";
+        //ImageButton iv = (ImageButton)v;
+        //int id = iv.getId();
+        //String idStr = getResources().getResourceName(id);
+        //full_blisstafla._lesmynd[_LesMyndNum] = "sorg";
         _LesMyndNum++;
         //full_blisstafla.PutToLes();
-        System.out.println(idStr);
+        System.out.println("sorg.........................................................");
+
+        String msg = "sorg";
+        Intent i = new Intent(tafla11.this, full_blisstafla.class);
+        i.putExtra("keyMessage", msg);
+        startActivity(i);
+
         //startActivity(new Intent(this, full_blisstafla.class));
     }
 

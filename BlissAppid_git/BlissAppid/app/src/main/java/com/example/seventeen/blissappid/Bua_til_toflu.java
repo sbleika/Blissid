@@ -50,7 +50,7 @@ public class Bua_til_toflu extends Activity {
     int _Radiochecked = 0;
 
     /**
-     *
+     * Til ad byrta lista af ollum taknum i gagnagrunni(virkar ekki)
      */
     public void DispList(){
         TextView taknalist;
@@ -82,7 +82,7 @@ public class Bua_til_toflu extends Activity {
 
     }
     /**
-     *
+     * til ad taka allan texta ur. tegar smellt er a
      * @param view
      */
     public void onTextClicked(View view) {
@@ -92,7 +92,7 @@ public class Bua_til_toflu extends Activity {
     }
 
     /**
-     *
+     * ef smellt er a radiotakka
      * @param view
      */
     public void onRadioButtonClicked(View view) {
@@ -125,13 +125,8 @@ public class Bua_til_toflu extends Activity {
     }
 
     /**
-     *
-     * @param NumOfItems
-     */
-
-    /**
-     *Fyrir: NumOfItems þarf að vera lögleg stærð á töflu
-     *Eftir: Sýndi eða faldi editText boxin eftir því sem við átti.
+     ** Eftir: Sýndi eða faldi editText boxin eftir því sem við átti.
+     * @param NumOfItems þarf að vera lögleg stærð á töflu
      */
     public void setVisiblefor(int NumOfItems){
         EditText  nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;

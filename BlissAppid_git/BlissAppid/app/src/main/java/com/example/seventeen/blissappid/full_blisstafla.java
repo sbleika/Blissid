@@ -124,7 +124,11 @@ public class full_blisstafla extends Activity {
 
         ImageButton lesstika1;
         lesstika1 = (ImageButton) findViewById(R.id.lesstika1);
-        ((ImageButton) lesstika1).setImageBitmap(DBHelper.getSymbolImage(_lesmynd[0]));
+
+        //Bundle extras = getIntent().getExtras();
+       // String msg = extras.getString("keyMessage");
+
+        //((ImageButton) lesstika1).setImageBitmap(DBHelper.getSymbolImage("nei"));
     }
 
 
