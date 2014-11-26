@@ -137,7 +137,7 @@ public class full_blisstafla extends Activity {
          */
         @Override
         public void onClick(View v) {
-            // todo byrta mynd a lesstiku
+            // todo birta mynd a lesstiku
             t11(v);
         }
     };
