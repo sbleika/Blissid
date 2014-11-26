@@ -29,7 +29,7 @@ while currentLine:
     print currentLine
     print name
     
-    cursor.execute ("INSERT INTO symbols values (1.1,?,?);", (sqlite3.Binary(blob)),name)
+    cursor.execute ("INSERT INTO symbols values (1.1,?,?);", (sqlite3.Binary(blob),name))
     currentLine = nafnaListi.readline()
    
 
