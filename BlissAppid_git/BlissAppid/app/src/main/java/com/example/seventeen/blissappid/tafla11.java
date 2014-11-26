@@ -16,7 +16,7 @@ public class tafla11 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kallari);
+        setContentView(R.layout.activity_tafla11);
         SetImage();
     }
     public void SetImage(){
@@ -122,7 +122,7 @@ public class tafla11 extends Activity {
      * opnar nyja gluggan tafla11
      */
     private void t11(View v){
-        startActivity(new Intent(this, full_blisstafla.class));
+        //startActivity(new Intent(this, full_blisstafla.class));
         ImageButton iv = (ImageButton)v;
         int id = iv.getId();
         String idStr = getResources().getResourceName(id);
@@ -130,7 +130,7 @@ public class tafla11 extends Activity {
         _LesMyndNum++;
         //full_blisstafla.PutToLes();
         System.out.println(idStr);
-        //startActivity(new Intent(this, full_blisstafla.class));
+        startActivity(new Intent(this, full_blisstafla.class));
     }
 
     /**
