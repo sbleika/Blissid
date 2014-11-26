@@ -45,9 +45,12 @@ BlissAppid_git/Blisstáknin/Blizztákn/h-ö/Thumbs.db
 mport android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+**/.*REMOTE.*
+**/.*LOCAL.*
+
 *.db
 *.db
 gagnagrunnsvinnsla/symbols.db
-**/*.db
+**/*.db.*
 *.db
 gagnagrunnsvinnsla/symbols.db
