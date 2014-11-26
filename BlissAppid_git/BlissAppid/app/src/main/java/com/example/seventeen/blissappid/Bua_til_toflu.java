@@ -197,34 +197,7 @@ public class Bua_til_toflu extends Activity {
          */
         @Override
         public void onClick(View v) {
-            EditText  nr1, nr2, nr3, nr4, nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
-            nr1 = (EditText) findViewById(R.id.editText4);
-            nr2 = (EditText) findViewById(R.id.editText5);
-            nr3 = (EditText) findViewById(R.id.editText7);
-            nr4 = (EditText) findViewById(R.id.editText6);
-            nr5 = (EditText) findViewById(R.id.editText9);
-            nr6 = (EditText) findViewById(R.id.editText8);
-            nr7 = (EditText) findViewById(R.id.editText10);
-            nr8 = (EditText) findViewById(R.id.editText11);
-            nr9 = (EditText) findViewById(R.id.editText12);
-            nr10 = (EditText) findViewById(R.id.editText13);
-            nr11 = (EditText) findViewById(R.id.editText14);
-            nr12 = (EditText) findViewById(R.id.editText15);
 
-            String[] myndir = new String[12];
-
-            myndir[0]= nr1.getText().toString();
-            myndir[1]= nr2.getText().toString();
-            myndir[2]= nr3.getText().toString();
-            myndir[3]= nr4.getText().toString();
-            myndir[4]= nr5.getText().toString();
-            myndir[5]= nr6.getText().toString();
-            myndir[6]= nr7.getText().toString();
-            myndir[7]= nr8.getText().toString();
-            myndir[8]= nr9.getText().toString();
-            myndir[9]= nr10.getText().toString();
-            myndir[10]= nr11.getText().toString();
-            myndir[11]= nr12.getText().toString();
 
             EditText upphafsmynd;
             upphafsmynd = (EditText)findViewById(R.id.textView9);
@@ -234,6 +207,40 @@ public class Bua_til_toflu extends Activity {
             Tbutton();
         }
     };
+
+    public  static String[] getarray(){
+
+        EditText  nr1, nr2, nr3, nr4, nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
+        nr1 = (EditText) findViewById(R.id.editText4);
+        nr2 = (EditText) findViewById(R.id.editText5);
+        nr3 = (EditText) findViewById(R.id.editText7);
+        nr4 = (EditText) findViewById(R.id.editText6);
+        nr5 = (EditText) findViewById(R.id.editText9);
+        nr6 = (EditText) findViewById(R.id.editText8);
+        nr7 = (EditText) findViewById(R.id.editText10);
+        nr8 = (EditText) findViewById(R.id.editText11);
+        nr9 = (EditText) findViewById(R.id.editText12);
+        nr10 = (EditText) findViewById(R.id.editText13);
+        nr11 = (EditText) findViewById(R.id.editText14);
+        nr12 = (EditText) findViewById(R.id.editText15);
+
+        String[] myndir = new String[12];
+
+        myndir[0]= nr1.getText().toString();
+        myndir[1]= nr2.getText().toString();
+        myndir[2]= nr3.getText().toString();
+        myndir[3]= nr4.getText().toString();
+        myndir[4]= nr5.getText().toString();
+        myndir[5]= nr6.getText().toString();
+        myndir[6]= nr7.getText().toString();
+        myndir[7]= nr8.getText().toString();
+        myndir[8]= nr9.getText().toString();
+        myndir[9]= nr10.getText().toString();
+        myndir[10]= nr11.getText().toString();
+        myndir[11]= nr12.getText().toString();
+
+        return myndir;
+    }
 
     /**
      * opnar nyja gluggan starfsmadur1

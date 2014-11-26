@@ -27,16 +27,14 @@ public class Kallari extends Activity {
      * @param size fjöldi mynda
      * @param myndir array fyrir oll taknin
      */
-    ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
-    ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+
 
     public static void maketablefun(String upphafstakn, int size, String[] myndir) {
-        // make new imagebutton...
-
+        //make new imagebutton...
+        //ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
+        //ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
         //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
-
-        //takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
-
+       // takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
     }
 
     /**
@@ -44,6 +42,7 @@ public class Kallari extends Activity {
      * @param menu menu
      * @return true
      */
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -59,6 +58,7 @@ public class Kallari extends Activity {
      * @param item menuitem
      * @return super.onOptionsItemSelected(item);
      */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
