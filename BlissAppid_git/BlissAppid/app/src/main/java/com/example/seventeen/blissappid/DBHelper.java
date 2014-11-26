@@ -70,6 +70,8 @@ private static SQLiteDatabase db = null;
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
 
+            cursor.moveToFirst();
+
             while(!cursor.isAfterLast())
             {
                 list.add(cursor.getInt(index));
