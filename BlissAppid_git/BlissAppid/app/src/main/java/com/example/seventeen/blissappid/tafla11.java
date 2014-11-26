@@ -10,18 +10,25 @@ import android.widget.ImageButton;
 
 
 public class tafla11 extends Activity {
-    DBHelper DB = new DBHelper(this);
+
+    DBHelper DB;
+
     static int _LesMyndNum = 0;
     static String _TableToUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kallari);
+        DB = new DBHelper(this);
+        setContentView(R.layout.activity_tafla11);
+        System.out.println("11111111111111111111");
         SetImage();
     }
     public void SetImage(){
         String[] myndir = new String[12];
+
+        System.out.println("22222222222222222222222");
         myndir = DBHelper.getBigTableSymbols("1.1");
+        System.out.println("33333333333333333333333");
         //for(int i = 0;i<25;i++){
         // /   myndir[i]= "sorg";
        // }
@@ -51,7 +58,7 @@ public class tafla11 extends Activity {
         ImageButton takkiE3 = (ImageButton) findViewById(R.id.E3);
         ImageButton takkiE4 = (ImageButton) findViewById(R.id.E4);
         ImageButton takkiE5 = (ImageButton) findViewById(R.id.E5);
-
+        System.out.println("444444444444444444444");
         if(myndir[0].charAt(0) == 'A'){takkiA1.setImageBitmap(DBHelper.getBigTableSymbolImage("A1","1.1"));}
         if(myndir[1].charAt(0) == 'A'){takkiA2.setImageBitmap(DBHelper.getBigTableSymbolImage("A2","1.1"));}
         if(myndir[2].charAt(0) == 'A'){takkiA3.setImageBitmap(DBHelper.getBigTableSymbolImage("A3","1.1"));}
@@ -77,7 +84,7 @@ public class tafla11 extends Activity {
         if(myndir[22].charAt(0) == 'E'){takkiE3.setImageBitmap(DBHelper.getBigTableSymbolImage("E3","1.1"));}
         if(myndir[23].charAt(0) == 'E'){takkiE4.setImageBitmap(DBHelper.getBigTableSymbolImage("E4","1.1"));}
         if(myndir[24].charAt(0) == 'E'){takkiE5.setImageBitmap(DBHelper.getBigTableSymbolImage("E5","1.1"));}
-
+        System.out.println("5555555555555555555555");
         takkiA1.setOnClickListener(OnClickbutton);
         takkiA2.setOnClickListener(OnClickbutton);
         takkiA3.setOnClickListener(OnClickbutton);
