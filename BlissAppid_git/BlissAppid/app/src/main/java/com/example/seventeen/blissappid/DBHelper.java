@@ -37,7 +37,7 @@ private static SQLiteDatabase db = null;
         }
     }
 
-    public void close()
+    public static void close()
     {
 
         try {
