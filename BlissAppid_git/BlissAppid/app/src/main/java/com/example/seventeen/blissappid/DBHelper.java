@@ -94,7 +94,7 @@ private static SQLiteDatabase db = null;
     }
 
     /**
-     * Fyrir    
+     * Fyrir
      * Eftir    komin ny tafla i gagnagrunn sem .................todo
      *
      * @param upphafstakn er myndin sem a ad byrtast a takkanum fyrir tofluna

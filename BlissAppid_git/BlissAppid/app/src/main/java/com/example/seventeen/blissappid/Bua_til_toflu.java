@@ -45,7 +45,7 @@ public class Bua_til_toflu extends Activity {
 
 
     }
-    String[] myndir = new String[12];
+    String[] _myndir = new String[12];
     int _Radiochecked = 0;
 
     /**
@@ -204,7 +204,8 @@ public class Bua_til_toflu extends Activity {
             EditText upphafsmynd;
             upphafsmynd = (EditText)findViewById(R.id.textView9);
             String txt9 = upphafsmynd.getText().toString();
-            DBHelper.maketablefun(txt9, _Radiochecked, myndir);
+            pushmyndir();
+            DBHelper.maketablefun(txt9, _Radiochecked, _myndir);
             //Kallari.maketablefun(txt9, _Radiochecked, myndir);
             Tbutton();
         }
@@ -225,18 +226,18 @@ public class Bua_til_toflu extends Activity {
         nr11 = (EditText) findViewById(R.id.editText14);
         nr12 = (EditText) findViewById(R.id.editText15);
 
-        myndir[0]= nr1.getText().toString();
-        myndir[1]= nr2.getText().toString();
-        myndir[2]= nr3.getText().toString();
-        myndir[3]= nr4.getText().toString();
-        myndir[4]= nr5.getText().toString();
-        myndir[5]= nr6.getText().toString();
-        myndir[6]= nr7.getText().toString();
-        myndir[7]= nr8.getText().toString();
-        myndir[8]= nr9.getText().toString();
-        myndir[9]= nr10.getText().toString();
-        myndir[10]= nr11.getText().toString();
-        myndir[11]= nr12.getText().toString();
+        _myndir[0]= nr1.getText().toString();
+        _myndir[1]= nr2.getText().toString();
+        _myndir[2]= nr3.getText().toString();
+        _myndir[3]= nr4.getText().toString();
+        _myndir[4]= nr5.getText().toString();
+        _myndir[5]= nr6.getText().toString();
+        _myndir[6]= nr7.getText().toString();
+        _myndir[7]= nr8.getText().toString();
+        _myndir[8]= nr9.getText().toString();
+        _myndir[9]= nr10.getText().toString();
+        _myndir[10]= nr11.getText().toString();
+        _myndir[11]= nr12.getText().toString();
     }
 
     public static String[] getarray(){
