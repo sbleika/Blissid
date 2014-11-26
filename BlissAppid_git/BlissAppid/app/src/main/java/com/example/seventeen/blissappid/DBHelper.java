@@ -104,7 +104,7 @@ private static SQLiteDatabase db = null;
             statement.setString(1, tableName);
             */
             //String[] selectionColumns =  {"symbolname"};
-            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"tablename=\"?\";",new String[]{tableName},null,null,null);
+            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\"?\";",new String[]{tableName},null,null,null);
 
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
@@ -146,7 +146,7 @@ private static SQLiteDatabase db = null;
             statement.setString(1, symbolName);
             */
             System.err.println("before cursor def");
-            Cursor cursor = db.query("bigtable",new String[]{"image"},"symbolname=\""+symbolName+"\"AND tablename=\""+tableName+"\"",null/*new String[]{symbolName}*/,null,null,null,null);
+            Cursor cursor = db.query("bigtable",new String[]{"image"},"symbolname=\""+symbolName+"\"AND _id=\""+tableName+"\"",null/*new String[]{symbolName}*/,null,null,null,null);
             System.err.println("after cursor def");
 
             System.err.println("after cursor print");
