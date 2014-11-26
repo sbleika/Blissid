@@ -31,10 +31,10 @@ public class Kallari extends Activity {
 
     public static void maketablefun(String upphafstakn, int size, String[] myndir) {
         //make new imagebutton...
-        ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
-        ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
-        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
-        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+        //ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
+        //ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+        //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+       // takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
     }
 
     /**

@@ -14,6 +14,12 @@ public class tafla11 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kallari);
 
+        ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
+        ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+        String[] myndir = new String[12];
+        myndir = Bua_til_toflu.getarray();
+        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
 
     }
 
@@ -23,15 +29,15 @@ public class tafla11 extends Activity {
      * @param size fjöldi mynda
      * @param myndir array fyrir oll taknin
      */
-    ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
-    ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+    //ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
+    //ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
 
     public static void maketablefun(String upphafstakn, int size, String[] myndir) {
         //make new imagebutton....
         //ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
         //ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
-        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
-        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+        //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+        //takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
     }
 
     /**
