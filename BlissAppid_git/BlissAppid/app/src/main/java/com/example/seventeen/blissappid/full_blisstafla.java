@@ -3,6 +3,7 @@ package com.example.seventeen.blissappid;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.StaticLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.ImageButton;
 
 
 public class full_blisstafla extends Activity {
-
+    static String[] _lesmynd = new String[9];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,6 +121,10 @@ public class full_blisstafla extends Activity {
         ImageButton tilbaka;
         tilbaka = (ImageButton) findViewById(R.id.tilbaka);
         tilbaka.setOnClickListener(gototilbakaClickListener);
+
+        ImageButton lesstika1;
+        lesstika1 = (ImageButton) findViewById(R.id.lesstika1);
+        ((ImageButton) lesstika1).setImageBitmap(DBHelper.getSymbolImage(_lesmynd[0]));
     }
 
 
@@ -149,7 +154,11 @@ public class full_blisstafla extends Activity {
         startActivity(new Intent(this, tafla11.class));
     }
 
-
+    //public static void PutToLes(){
+     //   ImageButton lesstika1;
+     //   lesstika1 = (ImageButton) findViewById(R.id.lesstika1);
+     //   ((ImageButton) lesstika1).setImageBitmap(DBHelper.getSymbolImage(_lesmynd[0]));
+   // }
 
     View.OnClickListener gototilbakaClickListener = new View.OnClickListener() {
         /**

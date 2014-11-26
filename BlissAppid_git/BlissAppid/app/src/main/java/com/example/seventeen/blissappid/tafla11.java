@@ -11,16 +11,20 @@ import android.widget.ImageButton;
 
 public class tafla11 extends Activity {
     DBHelper DB = new DBHelper(this);
+    static int _LesMyndNum = 0;
     static String _TableToUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kallari);
+        setContentView(R.layout.activity_tafla11);
         SetImage();
     }
     public void SetImage(){
         String[] myndir = new String[12];
-        myndir = DBHelper.getSymbols(_TableToUse);
+        //myndir = DBHelper.getSymbols(_TableToUse);
+        for(int i = 0;i<25;i++){
+            myndir[i]= "sorg";
+        }
 
         ImageButton takkiA1 = (ImageButton) findViewById(R.id.A1);
         ImageButton takkiA2 = (ImageButton) findViewById(R.id.A2);
@@ -47,7 +51,7 @@ public class tafla11 extends Activity {
         ImageButton takkiE3 = (ImageButton) findViewById(R.id.E3);
         ImageButton takkiE4 = (ImageButton) findViewById(R.id.E4);
         ImageButton takkiE5 = (ImageButton) findViewById(R.id.E5);
-
+/*
         if(myndir[0].charAt(0) == 'A'){takkiA1.setImageBitmap(DBHelper.getSymbolImage("A1"));}
         if(myndir[1].charAt(0) == 'A'){takkiA2.setImageBitmap(DBHelper.getSymbolImage("A2"));}
         if(myndir[2].charAt(0) == 'A'){takkiA3.setImageBitmap(DBHelper.getSymbolImage("A3"));}
@@ -73,7 +77,7 @@ public class tafla11 extends Activity {
         if(myndir[22].charAt(0) == 'E'){takkiE3.setImageBitmap(DBHelper.getSymbolImage("E3"));}
         if(myndir[23].charAt(0) == 'E'){takkiE4.setImageBitmap(DBHelper.getSymbolImage("E4"));}
         if(myndir[24].charAt(0) == 'E'){takkiE5.setImageBitmap(DBHelper.getSymbolImage("E5"));}
-
+*/
         takkiA1.setOnClickListener(OnClickbutton);
         takkiA2.setOnClickListener(OnClickbutton);
         takkiA3.setOnClickListener(OnClickbutton);
@@ -118,10 +122,13 @@ public class tafla11 extends Activity {
      * opnar nyja gluggan tafla11
      */
     private void t11(View v){
+        //startActivity(new Intent(this, full_blisstafla.class));
         ImageButton iv = (ImageButton)v;
         int id = iv.getId();
         String idStr = getResources().getResourceName(id);
-        tafla11._TableToUse = idStr;
+        full_blisstafla._lesmynd[_LesMyndNum] = "sorg";
+        _LesMyndNum++;
+        //full_blisstafla.PutToLes();
         System.out.println(idStr);
         startActivity(new Intent(this, full_blisstafla.class));
     }
@@ -174,6 +181,5 @@ public class tafla11 extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }
