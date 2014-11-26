@@ -128,8 +128,10 @@ public class Bua_til_toflu extends Activity {
      * @param NumOfItems
      */
 
-
-
+    /**
+     *Fyrir: NumOfItems þarf að vera lögleg stærð á töflu
+     *Eftir: Sýndi eða faldi editText boxin eftir því sem við átti.
+     */
     public void setVisiblefor(int NumOfItems){
         EditText  nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
         nr5 = (EditText) findViewById(R.id.editText9);
@@ -211,6 +213,10 @@ public class Bua_til_toflu extends Activity {
         }
     };
 
+    /**
+     * Fyrir: ekkert
+     * Eftir: Sækir textan úr editText boxunum og setur það í fylki sem stærðin ræðst af hversu mörg tákn voru valin.
+     */
     public void pushmyndir(){
         EditText  nr1, nr2, nr3, nr4, nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
         nr1 = (EditText) findViewById(R.id.editText4);
@@ -238,6 +244,50 @@ public class Bua_til_toflu extends Activity {
         _myndir[9]= nr10.getText().toString();
         _myndir[10]= nr11.getText().toString();
         _myndir[11]= nr12.getText().toString();
+
+        if(_Radiochecked == 4){
+            _myndir[0]= nr1.getText().toString();
+            _myndir[1]= nr2.getText().toString();
+            _myndir[2]= nr3.getText().toString();
+            _myndir[3]= nr4.getText().toString();
+        }
+
+        if(_Radiochecked == 6){
+            _myndir[0]= nr1.getText().toString();
+            _myndir[1]= nr2.getText().toString();
+            _myndir[2]= nr3.getText().toString();
+            _myndir[3]= nr4.getText().toString();
+            _myndir[4]= nr5.getText().toString();
+            _myndir[5]= nr6.getText().toString();
+        }
+
+        if(_Radiochecked == 9){
+            _myndir[0]= nr1.getText().toString();
+            _myndir[1]= nr2.getText().toString();
+            _myndir[2]= nr3.getText().toString();
+            _myndir[3]= nr4.getText().toString();
+            _myndir[4]= nr5.getText().toString();
+            _myndir[5]= nr6.getText().toString();
+            _myndir[6]= nr7.getText().toString();
+            _myndir[7]= nr8.getText().toString();
+            _myndir[8]= nr9.getText().toString();
+        }
+
+        if(_Radiochecked == 12){
+            _myndir[0]= nr1.getText().toString();
+            _myndir[1]= nr2.getText().toString();
+            _myndir[2]= nr3.getText().toString();
+            _myndir[3]= nr4.getText().toString();
+            _myndir[4]= nr5.getText().toString();
+            _myndir[5]= nr6.getText().toString();
+            _myndir[6]= nr7.getText().toString();
+            _myndir[7]= nr8.getText().toString();
+            _myndir[8]= nr9.getText().toString();
+            _myndir[9]= nr10.getText().toString();
+            _myndir[10]= nr11.getText().toString();
+            _myndir[11]= nr12.getText().toString();
+        }
+
     }
 
     public static String[] getarray(){
