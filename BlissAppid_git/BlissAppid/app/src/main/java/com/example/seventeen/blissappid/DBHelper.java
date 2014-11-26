@@ -104,7 +104,7 @@ private static SQLiteDatabase db = null;
             statement.setString(1, tableName);
             */
             //String[] selectionColumns =  {"symbolname"};
-            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\"?\";",new String[]{tableName},null,null,null);
+            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\""+tableName+"\";",null /*new String[]{tableName}*/,null,null,null);
 
             int index=cursor.getColumnIndexOrThrow("symbolname");
             ArrayList list = new ArrayList<String>();
