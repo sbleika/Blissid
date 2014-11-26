@@ -9,7 +9,6 @@ import android.widget.ImageButton;
 
 public class tafla11 extends Activity {
     DBHelper DB = new DBHelper(this);
-
     static String _TableToUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
