@@ -17,11 +17,13 @@
             android:layout_height="fill_parent">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/A1"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -30,11 +32,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/A2"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -43,11 +47,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/A3"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -56,11 +62,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/A4"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -69,11 +77,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/A5"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
     </LinearLayout>
 
@@ -89,11 +99,13 @@
             android:layout_height="fill_parent">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/B1"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -102,11 +114,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/B2"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -115,11 +129,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/B3"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -128,11 +144,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/B4"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -141,11 +159,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/B5"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -161,11 +181,13 @@
             android:layout_height="fill_parent">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/C1"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -174,11 +196,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/C2"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -187,11 +211,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/C3"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -200,11 +226,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/C4"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -213,11 +241,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/C5"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -232,11 +262,13 @@
             android:layout_height="fill_parent">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/D1"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -244,11 +276,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/D2"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -257,11 +291,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/D3"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -270,11 +306,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/D4"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -283,11 +321,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/D5"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -302,11 +342,13 @@
             android:layout_height="fill_parent">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/E1"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -315,11 +357,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/E2"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -328,11 +372,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/E3"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -341,11 +387,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/E4"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
 
         <LinearLayout
@@ -354,11 +402,13 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
                 android:id="@+id/E5"
                 android:src="@drawable/gosdrykkur"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
             </LinearLayout>
         </LinearLayout>
 
