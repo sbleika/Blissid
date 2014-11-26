@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -37,8 +38,8 @@ public class Bua_til_toflu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bua_til_toflu);
 
-        Button maketable;
-        maketable = (Button) findViewById(R.id.maketable);
+        ImageButton maketable;
+        maketable = (ImageButton) findViewById(R.id.maketable);
         maketable.setOnClickListener(gotomaketableClickListener);
 
         DispList();
