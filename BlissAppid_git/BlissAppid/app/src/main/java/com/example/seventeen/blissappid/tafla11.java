@@ -14,14 +14,10 @@ public class tafla11 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kallari);
-
-
-
-
         SetImage();
 
     }
-    public static void SetImage(){
+    public void SetImage(){
         String[] myndir = new String[12];
         myndir = DBHelper.getSymbols(_TableToUse);
 
@@ -51,31 +47,31 @@ public class tafla11 extends Activity {
         ImageButton takkiE4 = (ImageButton) findViewById(R.id.E4);
         ImageButton takkiE5 = (ImageButton) findViewById(R.id.E5);
 
-        if(myndir[0].charAt(0) == 'A'{takkiA1.setImageBitmap(DBHelper.getSymbolImage("A1"));}
-        if(myndir[1].charAt(0) == 'A'{takkiA2.setImageBitmap(DBHelper.getSymbolImage("A2"));}
-        if(myndir[2].charAt(0) == 'A'{takkiA3.setImageBitmap(DBHelper.getSymbolImage("A3"));}
-        if(myndir[3].charAt(0) == 'A'{takkiA4.setImageBitmap(DBHelper.getSymbolImage("A4"));}
-        if(myndir[4].charAt(0) == 'A'{takkiA5.setImageBitmap(DBHelper.getSymbolImage("A5"));}
-        if(myndir[5].charAt(0) == 'B'{takkiB1.setImageBitmap(DBHelper.getSymbolImage("B1"));}
-        if(myndir[6].charAt(0) == 'B'{takkiB2.setImageBitmap(DBHelper.getSymbolImage("B2"));}
-        if(myndir[7].charAt(0) == 'B'{takkiB3.setImageBitmap(DBHelper.getSymbolImage("B3"));}
-        if(myndir[8].charAt(0) == 'B'{takkiB4.setImageBitmap(DBHelper.getSymbolImage("B4"));}
-        if(myndir[9].charAt(0) == 'B'{takkiB5.setImageBitmap(DBHelper.getSymbolImage("B5"));}
-        if(myndir[10].charAt(0) == 'C'{takkiC1.setImageBitmap(DBHelper.getSymbolImage("C1"));}
-        if(myndir[11].charAt(0) == 'C'{takkiC2.setImageBitmap(DBHelper.getSymbolImage("C2"));}
-        if(myndir[12].charAt(0) == 'C'{takkiC3.setImageBitmap(DBHelper.getSymbolImage("C3"));}
-        if(myndir[13].charAt(0) == 'C'{takkiC4.setImageBitmap(DBHelper.getSymbolImage("C4"));}
-        if(myndir[14].charAt(0) == 'C'{takkiC5.setImageBitmap(DBHelper.getSymbolImage("C5"));}
-        if(myndir[15].charAt(0) == 'D'{takkiD1.setImageBitmap(DBHelper.getSymbolImage("D1"));}
-        if(myndir[16].charAt(0) == 'D'{takkiD2.setImageBitmap(DBHelper.getSymbolImage("D2"));}
-        if(myndir[17].charAt(0) == 'D'{takkiD3.setImageBitmap(DBHelper.getSymbolImage("D3"));}
-        if(myndir[18].charAt(0) == 'D'{takkiD4.setImageBitmap(DBHelper.getSymbolImage("D4"));}
-        if(myndir[19].charAt(0) == 'D'{takkiD5.setImageBitmap(DBHelper.getSymbolImage("D5"));}
-        if(myndir[20].charAt(0) == 'E'{takkiE1.setImageBitmap(DBHelper.getSymbolImage("E1"));}
-        if(myndir[21].charAt(0) == 'E'{takkiE2.setImageBitmap(DBHelper.getSymbolImage("E2"));}
-        if(myndir[22].charAt(0) == 'E'{takkiE3.setImageBitmap(DBHelper.getSymbolImage("E3"));}
-        if(myndir[23].charAt(0) == 'E'{takkiE4.setImageBitmap(DBHelper.getSymbolImage("E4"));}
-        if(myndir[24].charAt(0) == 'E'{takkiE5.setImageBitmap(DBHelper.getSymbolImage("E5"));}
+        if(myndir[0].charAt(0) == 'A'){takkiA1.setImageBitmap(DBHelper.getSymbolImage("A1"));}
+        if(myndir[1].charAt(0) == 'A'){takkiA2.setImageBitmap(DBHelper.getSymbolImage("A2"));}
+        if(myndir[2].charAt(0) == 'A'){takkiA3.setImageBitmap(DBHelper.getSymbolImage("A3"));}
+        if(myndir[3].charAt(0) == 'A'){takkiA4.setImageBitmap(DBHelper.getSymbolImage("A4"));}
+        if(myndir[4].charAt(0) == 'A'){takkiA5.setImageBitmap(DBHelper.getSymbolImage("A5"));}
+        if(myndir[5].charAt(0) == 'B'){takkiB1.setImageBitmap(DBHelper.getSymbolImage("B1"));}
+        if(myndir[6].charAt(0) == 'B'){takkiB2.setImageBitmap(DBHelper.getSymbolImage("B2"));}
+        if(myndir[7].charAt(0) == 'B'){takkiB3.setImageBitmap(DBHelper.getSymbolImage("B3"));}
+        if(myndir[8].charAt(0) == 'B'){takkiB4.setImageBitmap(DBHelper.getSymbolImage("B4"));}
+        if(myndir[9].charAt(0) == 'B'){takkiB5.setImageBitmap(DBHelper.getSymbolImage("B5"));}
+        if(myndir[10].charAt(0) == 'C'){takkiC1.setImageBitmap(DBHelper.getSymbolImage("C1"));}
+        if(myndir[11].charAt(0) == 'C'){takkiC2.setImageBitmap(DBHelper.getSymbolImage("C2"));}
+        if(myndir[12].charAt(0) == 'C'){takkiC3.setImageBitmap(DBHelper.getSymbolImage("C3"));}
+        if(myndir[13].charAt(0) == 'C'){takkiC4.setImageBitmap(DBHelper.getSymbolImage("C4"));}
+        if(myndir[14].charAt(0) == 'C'){takkiC5.setImageBitmap(DBHelper.getSymbolImage("C5"));}
+        if(myndir[15].charAt(0) == 'D'){takkiD1.setImageBitmap(DBHelper.getSymbolImage("D1"));}
+        if(myndir[16].charAt(0) == 'D'){takkiD2.setImageBitmap(DBHelper.getSymbolImage("D2"));}
+        if(myndir[17].charAt(0) == 'D'){takkiD3.setImageBitmap(DBHelper.getSymbolImage("D3"));}
+        if(myndir[18].charAt(0) == 'D'){takkiD4.setImageBitmap(DBHelper.getSymbolImage("D4"));}
+        if(myndir[19].charAt(0) == 'D'){takkiD5.setImageBitmap(DBHelper.getSymbolImage("D5"));}
+        if(myndir[20].charAt(0) == 'E'){takkiE1.setImageBitmap(DBHelper.getSymbolImage("E1"));}
+        if(myndir[21].charAt(0) == 'E'){takkiE2.setImageBitmap(DBHelper.getSymbolImage("E2"));}
+        if(myndir[22].charAt(0) == 'E'){takkiE3.setImageBitmap(DBHelper.getSymbolImage("E3"));}
+        if(myndir[23].charAt(0) == 'E'){takkiE4.setImageBitmap(DBHelper.getSymbolImage("E4"));}
+        if(myndir[24].charAt(0) == 'E'){takkiE5.setImageBitmap(DBHelper.getSymbolImage("E5"));}
     }
 
     /**
