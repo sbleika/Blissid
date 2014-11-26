@@ -93,6 +93,90 @@ private static SQLiteDatabase db = null;
 
     }
 
+
+    public static String[] getBigTableSymbols(String tableName)
+    {
+        try {
+
+        /*
+            String command = "SELECT symbolname from tableSymbols where tablename=\"?\";";
+            PreparedStatement statement = conn.prepareStatement(command);
+            statement.setString(1, tableName);
+            */
+            //String[] selectionColumns =  {"symbolname"};
+            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"tablename=\"?\";",new String[]{tableName},null,null,null);
+
+            int index=cursor.getColumnIndex("symbolname");
+            ArrayList list = new ArrayList<String>();
+
+            cursor.moveToFirst();
+
+            while(!cursor.isAfterLast())
+            {
+                list.add(cursor.getInt(index));
+                cursor.moveToNext();
+            }
+
+            String[] output = (String[]) list.toArray();
+
+            return output;
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
+            System.err.println("failed getsymbols");
+            String[] empty = new String[0];
+            return empty;
+        }
+
+    }
+
+    public static Bitmap getBigTableSymbolImage(String symbolName,String tableName)
+    {
+
+        byte[] byteImage = null;
+
+        try
+        {
+            /*
+            String command = "SELECT image from symbol where name=\"?\";";
+
+            PreparedStatement statement = conn.prepareStatement(command);
+            statement.setString(1, symbolName);
+            */
+            System.err.println("before cursor def");
+            Cursor cursor = db.query("bigtable",new String[]{"image"},"symbolname=\""+symbolName+"\"AND tablename=\""+tableName"\"",null/*new String[]{symbolName}*/,null,null,null,null);
+            System.err.println("after cursor def");
+
+            System.err.println("after cursor print");
+            int index = cursor.getColumnIndexOrThrow("image");
+            System.err.println(index);
+
+            System.err.println(cursor.getCount());
+            cursor.moveToFirst();
+            byteImage = cursor.getBlob(index);
+
+            System.err.println("after byteImage def");
+
+            // int blobLength = (int) blobImage.length();
+            // byteImage = blobImage.getBytes(1,blobLength);
+
+            Bitmap image = BitmapFactory.decodeByteArray(byteImage,0,byteImage.length);
+            return image;
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("sqlerror in DBHelper.getSymbolImage :"+e.getMessage());
+            System.err.println("failed getsymbolImage");
+            String[] empty = new String[0];
+            return null;
+        }
+
+    }
+
+
     /**
      * Fyrir
      * Eftir    komin ny tafla i gagnagrunn sem .................todo
