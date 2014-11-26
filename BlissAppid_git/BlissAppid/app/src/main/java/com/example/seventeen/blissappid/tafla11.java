@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 public class tafla11 extends Activity {
     DBHelper DB = new DBHelper(this);
+    static String _TableToUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,9 +18,9 @@ public class tafla11 extends Activity {
         ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
         ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
         String[] myndir = new String[12];
-        myndir = DBHelper.getSymbols(tafla);
-        takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
-        takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+        //myndir = DBHelper.getSymbols(tafla);
+        //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
+        //takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
     }
 
     /**

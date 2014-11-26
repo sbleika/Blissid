@@ -290,9 +290,9 @@ public class Bua_til_toflu extends Activity {
 
     }
 
-    public static String[] getarray(){
-        return new Bua_til_toflu().myndir;
-    }
+    //public static String[] getarray(){
+       // return new Bua_til_toflu().myndir;
+  //  }
 
     /**
      * opnar nyja gluggan starfsmadur1

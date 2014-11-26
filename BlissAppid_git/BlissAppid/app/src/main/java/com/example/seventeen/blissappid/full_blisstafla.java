@@ -133,14 +133,19 @@ public class full_blisstafla extends Activity {
         @Override
         public void onClick(View v) {
             // todo byrta mynd a lesstiku
-            t11();
+            t11(v);
         }
     };
 
     /**
      * opnar nyja gluggan tafla11
      */
-    private void t11(){
+    private void t11(View v){
+        ImageButton iv = (ImageButton)v;
+        int id = iv.getId();
+        String idStr = getResources().getResourceName(id);
+        tafla11._TableToUse = idStr;
+        System.out.println(idStr);
         startActivity(new Intent(this, tafla11.class));
     }
 
