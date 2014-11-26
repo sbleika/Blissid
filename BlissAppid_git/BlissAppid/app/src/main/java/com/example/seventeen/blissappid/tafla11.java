@@ -15,12 +15,44 @@ public class tafla11 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kallari);
 
-        ImageButton takn2 = (ImageButton) findViewById(R.id.imageButton3);
-        ImageButton takn1 = (ImageButton) findViewById(R.id.imageButton2);
+
+
+
+        SetImage();
+
+    }
+    public static void SetImage(){
         String[] myndir = new String[12];
-        //myndir = DBHelper.getSymbols(tafla);
-        //takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[0]));
-        //takn2.setImageBitmap(DBHelper.getSymbolImage(myndir[1]));
+        myndir = DBHelper.getSymbols(_TableToUse);
+
+        ImageButton takkiA1 = (ImageButton) findViewById(R.id.A1);
+        ImageButton takkiA2 = (ImageButton) findViewById(R.id.A2);
+
+        if(myndir[0].charAt(0) == 'A'{takn1.setImageBitmap(DBHelper.getSymbolImage(A1));}
+        if(myndir[1].charAt(0) == 'A'{takn1.setImageBitmap(DBHelper.getSymbolImage(A2));}
+        if(myndir[2].charAt(0) == 'A'{takn1.setImageBitmap(DBHelper.getSymbolImage(A3));}
+        if(myndir[3].charAt(0) == 'A'{takn1.setImageBitmap(DBHelper.getSymbolImage(A4));}
+        if(myndir[4].charAt(0) == 'A'{takn1.setImageBitmap(DBHelper.getSymbolImage(A5));}
+        if(myndir[5].charAt(0) == 'B'{takn1.setImageBitmap(DBHelper.getSymbolImage(B1));}
+        if(myndir[6].charAt(0) == 'B'{takn1.setImageBitmap(DBHelper.getSymbolImage(B2));}
+        if(myndir[7].charAt(0) == 'B'{takn1.setImageBitmap(DBHelper.getSymbolImage(B3));}
+        if(myndir[8].charAt(0) == 'B'{takn1.setImageBitmap(DBHelper.getSymbolImage(B4));}
+        if(myndir[9].charAt(0) == 'B'{takn1.setImageBitmap(DBHelper.getSymbolImage(B5));}
+        if(myndir[10].charAt(0) == 'C'{takn1.setImageBitmap(DBHelper.getSymbolImage(C1));}
+        if(myndir[11].charAt(0) == 'C'{takn1.setImageBitmap(DBHelper.getSymbolImage(C2));}
+        if(myndir[12].charAt(0) == 'C'{takn1.setImageBitmap(DBHelper.getSymbolImage(C3));}
+        if(myndir[13].charAt(0) == 'C'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[14].charAt(0) == 'C'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[15].charAt(0) == 'D'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[16].charAt(0) == 'D'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[17].charAt(0) == 'D'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[18].charAt(0) == 'D'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[19].charAt(0) == 'D'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[20].charAt(0) == 'E'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[21].charAt(0) == 'E'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[22].charAt(0) == 'E'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[23].charAt(0) == 'E'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
+        if(myndir[24].charAt(0) == 'E'{takn1.setImageBitmap(DBHelper.getSymbolImage(myndir[4]));}
     }
 
     /**
@@ -71,4 +103,6 @@ public class tafla11 extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
