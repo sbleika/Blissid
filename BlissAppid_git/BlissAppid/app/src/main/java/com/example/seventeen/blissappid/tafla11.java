@@ -1,9 +1,11 @@
 package com.example.seventeen.blissappid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 
 
@@ -71,6 +73,57 @@ public class tafla11 extends Activity {
         if(myndir[22].charAt(0) == 'E'){takkiE3.setImageBitmap(DBHelper.getSymbolImage("E3"));}
         if(myndir[23].charAt(0) == 'E'){takkiE4.setImageBitmap(DBHelper.getSymbolImage("E4"));}
         if(myndir[24].charAt(0) == 'E'){takkiE5.setImageBitmap(DBHelper.getSymbolImage("E5"));}
+
+        takkiA1.setOnClickListener(OnClickbutton);
+        takkiA2.setOnClickListener(OnClickbutton);
+        takkiA3.setOnClickListener(OnClickbutton);
+        takkiA4.setOnClickListener(OnClickbutton);
+        takkiA5.setOnClickListener(OnClickbutton);
+        takkiB1.setOnClickListener(OnClickbutton);
+        takkiB2.setOnClickListener(OnClickbutton);
+        takkiB3.setOnClickListener(OnClickbutton);
+        takkiB4.setOnClickListener(OnClickbutton);
+        takkiB5.setOnClickListener(OnClickbutton);
+        takkiC1.setOnClickListener(OnClickbutton);
+        takkiC2.setOnClickListener(OnClickbutton);
+        takkiC3.setOnClickListener(OnClickbutton);
+        takkiC4.setOnClickListener(OnClickbutton);
+        takkiC5.setOnClickListener(OnClickbutton);
+        takkiD1.setOnClickListener(OnClickbutton);
+        takkiD2.setOnClickListener(OnClickbutton);
+        takkiD3.setOnClickListener(OnClickbutton);
+        takkiD4.setOnClickListener(OnClickbutton);
+        takkiD5.setOnClickListener(OnClickbutton);
+        takkiE1.setOnClickListener(OnClickbutton);
+        takkiE2.setOnClickListener(OnClickbutton);
+        takkiE3.setOnClickListener(OnClickbutton);
+        takkiE4.setOnClickListener(OnClickbutton);
+        takkiE5.setOnClickListener(OnClickbutton);
+    }
+
+    // onclick fyrir töflur
+    View.OnClickListener OnClickbutton = new View.OnClickListener() {
+        /**
+         * ef smellt er a bio takkan er kallad a fallid bio()
+         * @param v view
+         */
+        @Override
+        public void onClick(View v) {
+            // todo byrta mynd a lesstiku
+            t11(v);
+        }
+    };
+
+    /**
+     * opnar nyja gluggan tafla11
+     */
+    private void t11(View v){
+        ImageButton iv = (ImageButton)v;
+        int id = iv.getId();
+        String idStr = getResources().getResourceName(id);
+        tafla11._TableToUse = idStr;
+        System.out.println(idStr);
+        startActivity(new Intent(this, full_blisstafla.class));
     }
 
     /**
