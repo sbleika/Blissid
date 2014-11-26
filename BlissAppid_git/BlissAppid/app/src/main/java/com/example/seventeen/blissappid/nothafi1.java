@@ -30,7 +30,7 @@ public class nothafi1 extends Activity {
     }
 
     /**
-     *
+     * bua til on click listnera fyrir takka i netenda vidmoti
      */
     public void makeOnclickListeners(){
         ImageButton jabutt;
