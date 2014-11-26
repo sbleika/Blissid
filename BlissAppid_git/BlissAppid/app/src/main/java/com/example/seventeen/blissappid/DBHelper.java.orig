@@ -5,8 +5,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 
+=======
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+>>>>>>> 4b1c09162b0ad6b321f85611926ea18464ad4074
 
 /**
  * Created by ivar on 05/11/14.
@@ -37,12 +43,17 @@ private static SQLiteDatabase db = null;
         }
     }
 
-    public static void close()
+    public void close()
     {
-
+           //TODO: adjust this
         try {
+<<<<<<< HEAD
             db.close();
         } catch (Exception e) {
+=======
+            conn.close();
+        } catch (SQLException e) {
+>>>>>>> 4b1c09162b0ad6b321f85611926ea18464ad4074
             e.printStackTrace();
         }
     }
@@ -55,7 +66,7 @@ private static SQLiteDatabase db = null;
      * @param tableName is a name of a table in the tables database
      * @return see after
      */
-    public static String[] getSymbols(String tableName)
+    public String[] getSymbols(String tableName)
     {
         try {
 
@@ -64,13 +75,15 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, tableName);
             */
+<<<<<<< HEAD
             //String[] selectionColumns =  {"symbolname"};
             Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",new String[]{tableName},null,null,null);
+=======
+            Cursor cursor = db.query("tableSymbols",new String[]{"symbolname"},"tablename=\"?\";",tableName):
+>>>>>>> 4b1c09162b0ad6b321f85611926ea18464ad4074
 
             int index=cursor.getColumnIndex("symbolname");
             ArrayList list = new ArrayList<String>();
-
-            cursor.moveToFirst();
 
             while(!cursor.isAfterLast())
             {
@@ -78,7 +91,11 @@ private static SQLiteDatabase db = null;
                 cursor.moveToNext();
             }
 
+<<<<<<< HEAD
             String[] output = (String[]) list.toArray();
+=======
+            String[] output = list.toArray();
+>>>>>>> 4b1c09162b0ad6b321f85611926ea18464ad4074
 
             return output;
 
@@ -90,18 +107,6 @@ private static SQLiteDatabase db = null;
             String[] empty = new String[0];
             return empty;
         }
-
-    }
-
-    /**
-     * Fyrir
-     * Eftir    komin ny tafla i gagnagrunn sem .................todo
-     *
-     * @param upphafstakn er myndin sem a ad byrtast a takkanum fyrir tofluna
-     * @param size er fjoldi takna
-     * @param myndir er fylki med taknunum
-     */
-    public static void maketablefun(String upphafstakn, int size, String[] myndir){
 
     }
 
@@ -123,19 +128,18 @@ private static SQLiteDatabase db = null;
             PreparedStatement statement = conn.prepareStatement(command);
             statement.setString(1, symbolName);
             */
-            System.err.println("before cursor def");
-            Cursor cursor = db.query("symbols",new String[]{"image"},"_id=\""+symbolName+"\"",null/*new String[]{symbolName}*/,null,null,null,null);
-            System.err.println("after cursor def");
+<<<<<<< HEAD
+            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",new String[]{symbolName},null,null,null);
+=======
+            Cursor cursor = db.query("Select",new String[]{"symbol"},"name=\"?\"",symbolName);
+>>>>>>> 4b1c09162b0ad6b321f85611926ea18464ad4074
 
-            System.err.println("after cursor print");
-            int index = cursor.getColumnIndexOrThrow("image");
-            System.err.println(index);
 
-            System.err.println(cursor.getCount());
-            cursor.moveToFirst();
-            byteImage = cursor.getBlob(index);
 
-            System.err.println("after byteImage def");
+            Blob blobImage = cursor.getBlob(0);
+
+            int blobLength = (int) blobImage.length();
+            byteImage = blobImage.getBytes(1,blobLength);
 
            // int blobLength = (int) blobImage.length();
            // byteImage = blobImage.getBytes(1,blobLength);
@@ -146,11 +150,14 @@ private static SQLiteDatabase db = null;
         }
         catch(Exception e)
         {
-            System.out.println("sqlerror in DBHelper.getSymbolImage :"+e.getMessage());
+            System.out.println("sqlerror in DBHelper.getSymbolImage"+e.getMessage());
             System.err.println("failed getsymbolImage");
             String[] empty = new String[0];
             return null;
         }
 
     }
+
+
+
 }
