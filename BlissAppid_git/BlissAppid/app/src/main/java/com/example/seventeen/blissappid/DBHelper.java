@@ -55,7 +55,7 @@ private static SQLiteDatabase db = null;
      * @param tableName is a name of a table in the tables database
      * @return see after
      */
-    public String[] getSymbols(String tableName)
+    public static String[] getSymbols(String tableName)
     {
         try {
 
@@ -90,6 +90,18 @@ private static SQLiteDatabase db = null;
             String[] empty = new String[0];
             return empty;
         }
+
+    }
+
+    /**
+     * Fyrir    
+     * Eftir    komin ny tafla i gagnagrunn sem .................todo
+     *
+     * @param upphafstakn er myndin sem a ad byrtast a takkanum fyrir tofluna
+     * @param size er fjoldi takna
+     * @param myndir er fylki med taknunum
+     */
+    public static void maketablefun(String upphafstakn, int size, String[] myndir){
 
     }
 

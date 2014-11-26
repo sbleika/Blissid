@@ -27,6 +27,7 @@ import java.io.InputStreamReader;
  */
 
 public class Bua_til_toflu extends Activity {
+
     /**
      *
      * @param savedInstanceState save instance
@@ -42,8 +43,9 @@ public class Bua_til_toflu extends Activity {
 
         DispList();
 
-    }
 
+    }
+    String[] myndir = new String[12];
     int _Radiochecked = 0;
 
     /**
@@ -202,14 +204,13 @@ public class Bua_til_toflu extends Activity {
             EditText upphafsmynd;
             upphafsmynd = (EditText)findViewById(R.id.textView9);
             String txt9 = upphafsmynd.getText().toString();
-
-            Kallari.maketablefun(txt9, _Radiochecked, myndir);
+            DBHelper.maketablefun(txt9, _Radiochecked, myndir);
+            //Kallari.maketablefun(txt9, _Radiochecked, myndir);
             Tbutton();
         }
     };
 
-    public  static String[] getarray(){
-
+    public void pushmyndir(){
         EditText  nr1, nr2, nr3, nr4, nr5, nr6, nr7, nr8, nr9, nr10, nr11, nr12, nr13, nr14, nr15 ;
         nr1 = (EditText) findViewById(R.id.editText4);
         nr2 = (EditText) findViewById(R.id.editText5);
@@ -224,8 +225,6 @@ public class Bua_til_toflu extends Activity {
         nr11 = (EditText) findViewById(R.id.editText14);
         nr12 = (EditText) findViewById(R.id.editText15);
 
-        String[] myndir = new String[12];
-
         myndir[0]= nr1.getText().toString();
         myndir[1]= nr2.getText().toString();
         myndir[2]= nr3.getText().toString();
@@ -238,8 +237,10 @@ public class Bua_til_toflu extends Activity {
         myndir[9]= nr10.getText().toString();
         myndir[10]= nr11.getText().toString();
         myndir[11]= nr12.getText().toString();
+    }
 
-        return myndir;
+    public static String[] getarray(){
+        return new Bua_til_toflu().myndir;
     }
 
     /**
