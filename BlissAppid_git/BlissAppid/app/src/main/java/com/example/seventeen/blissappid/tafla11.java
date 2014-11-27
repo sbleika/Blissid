@@ -33,8 +33,12 @@ public class tafla11 extends Activity {
      */
     public void SetImage(){
         String[] myndir = new String[12];
-
+        Bundle extras = getIntent().getExtras();
+        String msg = extras.getString("keyMessage");
+        String tafla = msg.substring(msg.length()-4);
+        System.out.println(tafla);
         System.out.println("22222222222222222222222");
+        //todo lesa inn tad sem var smellt a i full_bill... i stad 1.1
         myndir = DBHelper.getBigTableSymbols("1.1");
         System.out.println("33333333333333333333333");
         //for(int i = 0;i<25;i++){

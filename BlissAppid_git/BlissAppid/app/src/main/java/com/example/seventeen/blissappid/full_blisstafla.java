@@ -160,7 +160,14 @@ public class full_blisstafla extends Activity {
         //String idStr = getResources().getResourceName(id);
         //tafla11._TableToUse = idStr;
        System.out.println("111111111111111111111111111111111111111111111111111111111111111111");
-        startActivity(new Intent(this, tafla11.class));
+        //startActivity(new Intent(this, tafla11.class));
+        ImageButton iv = (ImageButton)v;
+        int id = iv.getId();
+        String idStr = getResources().getResourceName(id);
+        String msg = idStr;
+        Intent i = new Intent(full_blisstafla.this, tafla11.class);
+        i.putExtra("keyMessage", msg);
+        startActivity(i);
     }
 
     //public static void PutToLes(){
