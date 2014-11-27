@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 /**
@@ -85,7 +86,7 @@ private static SQLiteDatabase db = null;
         }
         catch(Exception e)
         {
-            System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
+            System.out.println("sqlerror in DBHelper.getSymbols" + e.getMessage());
             System.err.println("failed getsymbols");
             String[] empty = new String[0];
             return empty;
@@ -117,7 +118,17 @@ private static SQLiteDatabase db = null;
                 cursor.moveToNext();
             }
 
-            String[] output = (String[]) list.toArray();
+            int listLength = list.size();
+            String[] output = new String[listLength];
+            Iterator<String> iterator = list.iterator();
+
+            int i=0;
+            while(iterator.hasNext())
+            {
+                output[i]=iterator.next();
+                i++;
+            }
+
 
             return output;
 
