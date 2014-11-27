@@ -34,7 +34,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/A2"
+                android:id="@+id/B1"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -49,7 +49,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/A3"
+                android:id="@+id/C1"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -64,7 +64,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/A4"
+                android:id="@+id/D1"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -79,7 +79,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/A5"
+                android:id="@+id/E1"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -101,7 +101,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/B1"
+                android:id="@+id/A2"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -131,7 +131,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/B3"
+                android:id="@+id/C2"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -146,7 +146,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/B4"
+                android:id="@+id/D2"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -161,7 +161,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/B5"
+                android:id="@+id/E2"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -183,7 +183,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/C1"
+                android:id="@+id/A3"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -198,7 +198,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/C2"
+                android:id="@+id/B3"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -228,7 +228,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/C4"
+                android:id="@+id/D3"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -243,7 +243,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/C5"
+                android:id="@+id/E3"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -264,7 +264,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/D1"
+                android:id="@+id/A4"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -278,7 +278,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/D2"
+                android:id="@+id/B4"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -293,7 +293,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/D3"
+                android:id="@+id/C4"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -323,7 +323,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/D5"
+                android:id="@+id/E4"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -344,7 +344,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/E1"
+                android:id="@+id/A5"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -359,7 +359,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/E2"
+                android:id="@+id/B5"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -374,7 +374,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/E3"
+                android:id="@+id/C5"
                 android:src="@drawable/gosdrykkur"
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
@@ -389,7 +389,7 @@
             <ImageButton
                 android:layout_width="140dp"
                 android:layout_height="135dp"
-                android:id="@+id/E4"
+                android:id="@+id/D5"
 
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
