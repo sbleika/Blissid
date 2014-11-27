@@ -108,13 +108,13 @@ private static SQLiteDatabase db = null;
             Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\""+tableName+"\";",null /*new String[]{tableName}*/,null,null,null);
 
             int index=cursor.getColumnIndexOrThrow("symbolname");
-            ArrayList list = new ArrayList<String>();
+            ArrayList<String> list = new ArrayList<String>();
 
             cursor.moveToFirst();
 
             while(!cursor.isAfterLast())
             {
-                list.add(cursor.getInt(index));
+                list.add(cursor.getString(index));
                 cursor.moveToNext();
             }
 
