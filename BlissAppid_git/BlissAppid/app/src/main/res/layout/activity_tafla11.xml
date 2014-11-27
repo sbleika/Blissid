@@ -390,7 +390,7 @@
                 android:layout_width="140dp"
                 android:layout_height="135dp"
                 android:id="@+id/E4"
-                android:src="@drawable/gosdrykkur"
+
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp" />
@@ -405,7 +405,7 @@
                 android:layout_width="140dp"
                 android:layout_height="135dp"
                 android:id="@+id/E5"
-                android:src="@drawable/gosdrykkur"
+
                 android:scaleType="fitXY"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp" />
