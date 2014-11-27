@@ -11,7 +11,11 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
+/**
+ * Hofundur: Ivar Orn
+ * Dagsetning: 18.11.2014
+ * Lysing: til ad na i myndir og hjalpa dbhelper
+ */
 public class ExternalDbOpenHelper extends SQLiteOpenHelper {
 
     //Path to the device folder with databases

@@ -8,7 +8,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-
+/**
+ * Hofundur: Berglind Silja
+ * Dagsetning: 17.11.2014
+ * Lysing: myndir af tokkunum fyrir fulla blisstaknatoflu
+ */
 
 public class full_blisstafla extends Activity {
     static String[] _lesmynd = new String[9];
@@ -141,7 +145,8 @@ public class full_blisstafla extends Activity {
          */
         @Override
         public void onClick(View v) {
-            // todo birta mynd a lesstiku
+            // todo
+            // birta mynd a lesstiku
             t11(v);
         }
     };
