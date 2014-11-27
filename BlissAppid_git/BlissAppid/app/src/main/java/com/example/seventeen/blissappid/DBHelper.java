@@ -79,6 +79,8 @@ private static SQLiteDatabase db = null;
                 cursor.moveToNext();
             }
 
+            cursor.close();
+
             String[] output = (String[]) list.toArray();
 
             return output;
@@ -117,6 +119,8 @@ private static SQLiteDatabase db = null;
                 list.add(cursor.getString(index));
                 cursor.moveToNext();
             }
+
+            cursor.close();
 
             int listLength = list.size();
             String[] output = new String[listLength];
@@ -167,6 +171,8 @@ private static SQLiteDatabase db = null;
             System.err.println(cursor.getCount());
             cursor.moveToFirst();
             byteImage = cursor.getBlob(index);
+
+            cursor.close();
 
             System.err.println("after byteImage def");
 
