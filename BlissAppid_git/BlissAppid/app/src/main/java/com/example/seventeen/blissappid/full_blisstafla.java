@@ -155,11 +155,11 @@ public class full_blisstafla extends Activity {
      * opnar nyja gluggan tafla11
      */
     private void t11(View v){
-        ImageButton iv = (ImageButton)v;
-        int id = iv.getId();
-        String idStr = getResources().getResourceName(id);
-        tafla11._TableToUse = idStr;
-        System.out.println(idStr);
+        //ImageButton iv = (ImageButton)v;
+        //int id = iv.getId();
+        //String idStr = getResources().getResourceName(id);
+        //tafla11._TableToUse = idStr;
+       System.out.println("111111111111111111111111111111111111111111111111111111111111111111");
         startActivity(new Intent(this, tafla11.class));
     }
 

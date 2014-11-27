@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 /**
@@ -85,7 +86,7 @@ private static SQLiteDatabase db = null;
         }
         catch(Exception e)
         {
-            System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
+            System.out.println("sqlerror in DBHelper.getSymbols" + e.getMessage());
             System.err.println("failed getsymbols");
             String[] empty = new String[0];
             return empty;
@@ -104,20 +105,30 @@ private static SQLiteDatabase db = null;
             statement.setString(1, tableName);
             */
             //String[] selectionColumns =  {"symbolname"};
-            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\"?\";",new String[]{tableName},null,null,null);
+            Cursor cursor = db.query("bigtable",new String[]{"symbolname"},"_id=\""+tableName+"\";",null /*new String[]{tableName}*/,null,null,null);
 
-            int index=cursor.getColumnIndex("symbolname");
-            ArrayList list = new ArrayList<String>();
+            int index=cursor.getColumnIndexOrThrow("symbolname");
+            ArrayList<String> list = new ArrayList<String>();
 
             cursor.moveToFirst();
 
             while(!cursor.isAfterLast())
             {
-                list.add(cursor.getInt(index));
+                list.add(cursor.getString(index));
                 cursor.moveToNext();
             }
 
-            String[] output = (String[]) list.toArray();
+            int listLength = list.size();
+            String[] output = new String[listLength];
+            Iterator<String> iterator = list.iterator();
+
+            int i=0;
+            while(iterator.hasNext())
+            {
+                output[i]=iterator.next();
+                i++;
+            }
+
 
             return output;
 
@@ -125,7 +136,7 @@ private static SQLiteDatabase db = null;
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbols"+e.getMessage());
-            System.err.println("failed getsymbols");
+            System.err.println("failed getbigtablesymbols");
             String[] empty = new String[0];
             return empty;
         }
@@ -169,7 +180,7 @@ private static SQLiteDatabase db = null;
         catch(Exception e)
         {
             System.out.println("sqlerror in DBHelper.getSymbolImage :"+e.getMessage());
-            System.err.println("failed getsymbolImage");
+            System.err.println("failed getbigtablesymbolImage");
             String[] empty = new String[0];
             return null;
         }
