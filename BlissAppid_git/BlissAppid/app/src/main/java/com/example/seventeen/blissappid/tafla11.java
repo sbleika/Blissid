@@ -7,7 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-
+/**
+ * Hofundur: Egill Orn Sigthorsson
+ * Dagsetning: 19.11.2014
+ * Lysing: activity til ad birta hverja toflu fyrir fullu blisstaknatofluna
+ */
 
 public class tafla11 extends Activity {
 
@@ -23,6 +27,10 @@ public class tafla11 extends Activity {
         System.out.println("11111111111111111111");
         SetImage();
     }
+
+    /**
+     * Setur inn alla myndirnar fra gagnagrunninum
+     */
     public void SetImage(){
         String[] myndir = new String[12];
 
